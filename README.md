@@ -14,7 +14,7 @@
 ## Установка шаблона
 
 ``` sh
-$ git clone https://github.com/cotang/fuel.git folder-name
+$ git clone https://github.com/cotang/fuel-technology.git folder-name
 $ cd folder-name
 $ npm i -D
 $ bower i
