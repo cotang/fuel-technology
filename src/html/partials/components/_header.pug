@@ -1,0 +1,65 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  +e.upper
+    .container
+      +e.wrapper
+        +e.address
+          // Address
+          +b.address
+            span СПб, пр. Александровской фермы, д.29, литер Е.
+            a(href="page-contacts.html") Смотреть на карте
+        +e.logo
+          // Logo
+          +b.A.logo(href="index.html" title="Техника топлива")
+            img(src="img/logo.png" alt="Техника топлива")
+        +e.call
+          // Call
+          +b.call
+            span Бесплатный звонок по России
+            a(href="tel:+78007770010") 8 800 777 00 10
+
+  +e.nav
+    .container
+      +b.NAV.nav
+        +e.hamburger
+          +b.A.hamburger(href="javascript:void(0);")
+            span
+            | Меню
+
+        +e.UL.list
+          +e.item--home
+            a(href="index.html", title="Главная страница")
+          +e.item
+            a(href="#") О компании
+            +e.UL.sublist
+              +e.subitem
+                a(href="page-about.html") О компании
+              +e.subitem
+                a(href="page-news.html") Новости
+          +e.item
+            a(href="page-services.html") Услуги
+          +e.item
+            a(href="#") Продукция
+            +e.UL.sublist
+              +e.subitem
+                a(href="page-production.html") Продукция
+              +e.subitem
+                a(href="page-quality.html") Контроль качества
+          +e.item
+            a(href="#") Технологии
+            +e.UL.sublist
+              +e.subitem
+                a(href="page-technology.html") Технологии производства
+              +e.subitem
+                a(href="page-services.html") Статьи
+          +e.item
+            a(href="page-equipment.html") Оборудование
+          +e.item
+            a(href="page-where-to-buy.html") Где купить
+          +e.item
+            a(href="page-contacts.html") Контакты
+
+
+

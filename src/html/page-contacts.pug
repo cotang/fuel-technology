@@ -1,0 +1,41 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--contacts
+
+    // Contacts
+    +b.SECTION.contacts
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          span Контакты
+
+        +e.H1.title Контакты ООО «Техника Топлива»
+        +b.office
+          p Офис компании «Техника Топлива» по адресу:
+          p Санкт-Петербург, пр. Александровской фермы, д.29, лит. Е.
+          p
+            em Около 1 км от м. Обухово (зеленая ветка метрополитена).
+        +e.round-map
+          +e.round-map-bg
+        +e.info-wrapper
+          +e.tel
+            p Контактный телефон для связи:
+            p
+              a(href="tel:+78007770010") 8 800 777 00 10
+            p Бесплатный звонок — для абонентов России
+          +e.email
+            p Эл. почта для обратной связи:
+            p
+              a(href="mailto:info@fueltechnology.ru") info@fueltechnology.ru
+          +e.email
+            p Эл. почта для заказа комплектующих:
+            p
+              a(href="mailto:order@fueltechnology.ru") order@fueltechnology.ru
+
+    // Footer
+    +footer()

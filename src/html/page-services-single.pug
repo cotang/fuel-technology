@@ -1,0 +1,46 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--services-single
+
+    // Single service
+    +b.ARTICLE.single-service
+
+      // Single service promo
+      +b.SECTION.single-service-promo
+        .container
+
+          // Breadcrumbs
+          +b.breadcrumbs
+            a(href="index.html") Главная
+            =' /'
+            a(href="page-services.html") Услуги компании
+            =' /'
+            span Ремонт отрывных муфт
+
+          +e.H1.title Ремонт отрывных муфт
+          +e.text Компания «Техника Топлива» представляет услуги по комплексному ремонту отрывных муфт для пистолетов автозаправочных станций и топливно-раздаточных комплексов российских и западных производителей.
+
+      .container
+        +e.text
+          +e.thumbnail
+            img(src="img/service-single-stamp.jpg", alt="service single")
+            +e.description Подпись к фотографии комплектующих для АЗС и ТРК российского производства компании «Техника Топлива»
+          h2 О процедуре ремонта отрывных муфт
+          p Сменные отрывные муфты как и любые комплектующие требуют ремонта в ходе активной эксплуатации на предприятии АЗС и ТРК. Комплекс мероприятий, связанных с ремонтом отрывных муфт, ublishing packages and web page editors now use Lorem Ipsum as their default. Various versions have evolved over the years, sometimes by accident.
+          +b.A.btn--grey(href="#") Заказать ремонт муфт
+          h2 Подзаголовок H2
+          p Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          p
+            img(src="img/single-img.jpg", alt="single img")
+          h3 Подзаголовок H3
+          p If you are going to use a passage of Lorem Ipsum, you need to be sure embar ras sing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat pre de fined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+          h3 Подзаголовок H3
+          p If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embar ras sing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat pre de  predefined chunks as necessary, making this the first true generator on the Internet.
+        +e.btn-wrapper
+          +b.A.btn(href="page-services.html") Вернуться к списку услуг
+
+    // Footer
+    +footer()
+

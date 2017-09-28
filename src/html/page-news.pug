@@ -1,0 +1,64 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--news
+
+    // News promo
+    +b.SECTION.news-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          a(href="page-about.html") О компании
+          =' /'
+          span Новости компании
+
+        +e.H1.title Новости компании
+        +e.text Компания «Техника Топлива» представляет новости рынка комплектующих для АЗС и ТРК: новые стандарты качества продукции, европейские нормы и примеры эффективности применения комплектующих для АЗС на практике.
+
+    // Articles
+    +b.SECTION.news
+      .container
+        +e.list
+          +b.ARTICLE.article
+            +e.date 12.04.2017
+            +e.H3.title Введены новые стандарты  качества для комплектующих АЗС
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.date 11.04.2017
+            +e.H3.title Проведена оценка эффективности комплектующих компании
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.date 10.04.2017
+            +e.H3.title Завершена сертификация комплектующих «Техника Топлива»
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.date 09.04.2017
+            +e.H3.title Единые европейские нормы по контролю качества продукции
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.date 08.04.2017
+            +e.H3.title «Техника Топлива» в локомотиве импортозамещения
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+        // Pagination
+        +b.pagination
+          +e.inner
+            +e.SPAN.page Вы смотрите
+            +e.UL.list
+              +e.item--active
+                a(href="page-articles.html") 1
+              +e.item
+                a(href="page-articles.html") 2
+              +e.item
+                a(href="page-articles.html") 3
+              +e.item
+                a(href="page-articles.html") 4
+              +e.item
+                a(href="page-articles.html") 5
+
+    // Footer
+    +footer()

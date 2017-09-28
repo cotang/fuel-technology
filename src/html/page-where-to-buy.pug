@@ -1,0 +1,75 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--where-to-buy
+
+    // Where-to-buy promo
+    +b.SECTION.where-to-buy-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          span Где купить комплектующие «Техника Топлива» для АЗС
+
+        +e.H1.title Где купить комплектующие «Техника Топлива» для АЗС
+        +e.text Компания «Техника Топлива» представляет карточки компаний: наших дилеров на рынке комплектующих для АЗС и ТРК, аффилированных на территории Российской Федерации.
+
+    // Dealers
+    +b.SECTION.dealers
+      .container
+        +e.column
+          +b.dealers-map
+            +e.H2.title Дилеры «Техника Топлива» на карте России
+            +e.frame
+              img(src="img/where-map.jpg", alt="map")
+              +e.A.loupe(href="#") Увеличить карту
+
+          +b.dealers-catalog
+            +e.H2.title Список дилеров комплектующих «Техника Топлива»
+            +e.UL.list
+              +e.H2.title Дилеры «Техника Топлива» на карте России
+              +e.list
+                +b.ARTICLE.dealer
+                  +e.img
+                    img(src="img/where-logo1.jpg", alt="dealer")
+                  +e.H3.title ООО «Центр Продаж Комплектующих»
+                  +e.description
+                    span Интернет-магазин
+                    span Санкт-Петербург
+                  +e.info
+                    +e.address
+                      span Адрес:
+                      span СПб, пр. Александровской Фермы д.29 лит.Е, офис 102.
+                    +e.tel
+                      span Телефон:
+                      span
+                        a(href="tel:+78128008080") +7 (812) XXX-XX-XX
+                    +e.site
+                      span Веб-сайт:
+                      span
+                        a(href="http://www.sitename.ru") www.sitename.ru
+                +b.ARTICLE.dealer
+                  +e.img
+                    img(src="img/where-logo2.jpg", alt="dealer")
+                  +e.H3.title ООО «ТехОборудование»
+                  +e.description
+                    span Интернет-магазин
+                    span Москва
+                  +e.info
+                    +e.address
+                      span Адрес:
+                      span Москва, ул. Большая Очаковская д. 47А, строение 4.
+                    +e.tel
+                      span Телефон:
+                      span
+                        a(href="tel:+74952150202") +7 (495) 215-02-02
+                    +e.site
+                      span Веб-сайт:
+                      span
+                        a(href="http://tech-equip.ru/") www.tech-equip.ru
+
+    // Footer
+    +footer()

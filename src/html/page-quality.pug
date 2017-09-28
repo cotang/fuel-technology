@@ -1,0 +1,45 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--quality
+
+    // Quality promo
+    +b.SECTION.quality-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          a(href="page-production.html") Продукция
+          =' /'
+          span Контроль качества продукции
+
+        +e.H1.title Контроль качества продукции
+        +e.text Изготовляемая продукция компании «Техника Топлива» проходит ежегодную сертификацию по контролю качества в соответствии с российскими и европейскими нормами для комплектующих АЗС и ТРК.
+
+    // Quality certificates
+    +b.SECTION.quality-certificates
+      .container
+        +e.column
+          +e.H2.title Сертификаты качества продукции
+          +e.text Компания «Техника Топлива» представляет сертификаты качества продукции: комплектующие для АЗС и ТРК обладают всех необходимой сертификацией для работы в условиях повышенной пожароопасности.
+          +e.list
+            +b.ARTICLE.certificate
+              +e.H3.title Сертификат системы менеджмента качества ISO 9001 ELAFLEX- Gummi Ehlers GmbH
+              +e.date Опубликовано: 12.09.2017
+              +e.img
+                img(src="img/certificate.jpg", alt="certificate")
+              +e.text Cертификат подтверждает, что СМК в области разработки, производства и поставки топливных и химический шланговых комплектов, шлангов, фитингов для шлангов, автоцистерн и трубопроводов, топливных раздаточных кранов и резиновых компенсаторов.
+              +e.link-wrapper
+                +b.A.link(href="#") Посмотреть полностью
+            +b.ARTICLE.certificate
+            +b.ARTICLE.certificate
+    // Footer
+    +footer()
+
+
+
+
+

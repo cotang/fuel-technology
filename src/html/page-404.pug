@@ -1,0 +1,24 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--404
+
+    // Not found
+    +b.SECTION.not-found
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          span Страница не найдена
+
+        +e.H1.title Ошибка №404
+        +e.H3.subtitle Страница не найдена
+        +e.text Такой страницы нет на сайте. Вероятно, ссылка, по которой Вы сюда попали, устарела, или Вы ошиблись, когда набирали адрес.
+        +e.btn-wrapper
+          +b.A.btn(href="index.html") Вернуться на главную страницу
+
+    // Footer
+    +footer()

@@ -1,0 +1,81 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--production
+
+    // Production promo
+    +b.SECTION.production-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          span Готовая продукция «Техника Топлива»
+
+        +e.H1.title Готовая продукция «Техника Топлива»
+        +e.text Компания «Техника Топлива» представляет ассортимент продукции: комплектующие для АЗС и ТРК с техническими описаниями по применению, назначению и размерами для монтажа на объектах (предприятиях).
+
+    // Production components
+    +b.SECTION.production-components
+      .container
+        +e.row
+          +e.left
+            +e.H2.title Продукция «Техника Топлива»: комплектующие для АЗС
+            +e.text Компания «Техника Топлива» представляет ассортимент продукции: комплектующие для АЗС и ТРК с техническими описаниями по применению, назначению и размерами для монтажа на объектах (предприятиях). It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +e.right
+            +e.img
+              img(src="img/production-triangle.png", alt="Техника топлива")
+        +e.row
+          +e.left
+            +b.production-catalog
+              +e.H2.title Ассортимент продукции компании «Техника Топлива»
+              +b.ARTICLE.production-catalog-item
+                +e.img
+                  img(src="img/production-catalog-item.jpg", alt="production catalog item")
+                +e.text-wrapper
+                  +e.H3.title Отрывная поворотно-осевая муфта ОМ 16.1 (папа-папа)
+                  +e.article Артикул: ОМ 16.0
+                  +e.text Отрывная поворотно-осевая муфта ОМ 16.0 предназначена для установки на АЗС на заправочные шланги перед заправочным пистолетом.
+                  +e.btn-wrapper
+                    +e.price Цена:
+                      span 2000 руб./ед.
+                    +e.order Заказ от 10 шт.
+                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+              +b.ARTICLE.production-catalog-item
+                +e.img
+                  img(src="img/production-catalog-item.jpg", alt="production catalog item")
+                +e.text-wrapper
+                  +e.H3.title Отрывная поворотно-осевая муфта ОМ 16.1 (папа-мама)
+                  +e.article Артикул: ОМ 16.1
+                  +e.text Отрывная поворотно-осевая муфта ОМ 16.1 (папа-папа) и все ее комплектующие изготовлены на территории России.
+                  +e.btn-wrapper
+                    +e.price Цена:
+                      span 2000 руб./ед.
+                    +e.order Заказ от 10 шт.
+                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+              +b.ARTICLE.production-catalog-item
+                +e.img
+                  img(src="img/production-catalog-item.jpg", alt="production catalog item")
+                +e.text-wrapper
+                  +e.H3.title Муфта отрывная сменная для пистолетов АЗС
+                  +e.article Артикул: ОМ 16.2
+                  +e.text Применяется для монтажа на автозаправочные пистолеты АЗС и ТРК для легкового и грузового транспорта. Сертифицировано в РосТест РФ.
+                  +e.btn-wrapper
+                    +e.price Цена:
+                      span 2000 руб./ед.
+                    +e.order Заказ от 10 шт.
+                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+          +e.right
+            +e.download
+              +b.download Вы можете скачать каталог продукции «Техника Топлива» в формате PDF.
+                +b.A.btn--grey--download(href="#") Скачать каталог
+
+    // Footer
+    +footer()
+
+
+
+
+

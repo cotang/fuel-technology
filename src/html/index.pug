@@ -1,0 +1,31 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--index
+
+    // Promo
+    +b.SECTION.index-promo
+      .container
+        +e.video
+          +b.video
+            +e.frame
+              video(width='1920', height='1080', autoplay='', loop='')
+                source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
+                img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+        +e.features
+          +b.feature--one
+            +e.H3.title Сделано в России
+            +e.P.text Изготовление комплектующих на территории России
+          +b.feature--two
+            +e.H3.title Комплектующие
+            +e.P.text Для автозаправочных станций и комплексов ТРК
+          +b.feature--three
+            +e.H3.title Контроль качества
+            +e.P.text Сертификация продукции в РосТест
+          +b.feature--four
+            +e.H3.title Где купить
+            +e.P.text Официальные дилеры в России и СНГ
+
+    // Footer
+    +footer()

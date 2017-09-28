@@ -1,0 +1,69 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--articles
+
+    // Articles promo
+    +b.SECTION.articles-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          a(href="page-technology.html") Технологии
+          =' /'
+          span Статьи
+
+        +e.H1.title Статьи
+        +e.text Компания «Техника Топлива» представляет вашему вниманию серию статей о стандартах качества комплектующих для АЗС, европейских нормах и сертификации качества комплектующих и их составных частей. Эффективность применения комплектующих также представляет собой значительный интерес для специалистов с компетентной точки зрения в области прикладной инженерии.
+
+    // Articles
+    +b.SECTION.articles
+      .container
+        +e.list
+          +b.ARTICLE.article
+            +e.img
+              img(src="img/article1.jpg", alt="article 1")
+            +e.H3.title Стандарты  качества комплектующих для АЗС
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.img
+              img(src="img/article2.jpg", alt="article 2")
+            +e.H3.title Европейская сертификация качества комплектующих
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.img
+              img(src="img/article3.jpg", alt="article 3")
+            +e.H3.title Эффективность применения комплектующих компании «Техника Топлива»
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.img
+              img(src="img/article4.jpg", alt="article 4")
+            +e.H3.title Сравнительный анализ комплектующих производителей
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          +b.ARTICLE.article
+            +e.img
+              img(src="img/article5.jpg", alt="article 5")
+            +e.H3.title Производственный цикл производства комплектующих
+            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+        // Pagination
+        +b.pagination
+          +e.inner
+            +e.SPAN.page Вы смотрите
+            +e.UL.list
+              +e.item--active
+                a(href="page-articles.html") 1
+              +e.item
+                a(href="page-articles.html") 2
+              +e.item
+                a(href="page-articles.html") 3
+              +e.item
+                a(href="page-articles.html") 4
+              +e.item
+                a(href="page-articles.html") 5
+
+    // Footer
+    +footer()

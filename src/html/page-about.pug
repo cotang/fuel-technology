@@ -1,0 +1,94 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--about
+
+    // About promo
+    +b.SECTION.about-promo
+      .container
+
+        // Breadcrumbs
+        +b.breadcrumbs
+          a(href="index.html") Главная
+          =' /'
+          span О компании «Техника Топлива»
+
+        +e.H1.title О компании «Техника Топлива»
+        +e.text Основная информация о деятельности компании «Техника Топлива»: общие положения, презентация компании, конкурентные преимущества, геолокация производства компании и многое другое.
+        +e.btn-wrapper
+          +b.A.btn(href="#") Узнать больше
+          +b.A.btn(href="#") Где купить
+
+    // About common
+    +b.SECTION.about-common
+      .container
+        +e.row
+          +e.left
+            +e.H2.title Общие положения о компании
+            +e.text
+              p Российская производственная Компания «Техника Топлива» основана в 2017 году специалистами в области оборудования для АЗС.
+              a.link-more(href="#") Читать далее
+              p Ключевая цель Компании — изготовление оборудования и комплектующих для АЗС на территории России, по качеству не уступающих западным аналогам.
+              p Для достижения этой цели в нашей Компании используются только самые современные технологии производства и только высококачественные материалы. На всех этапах производственной цепочки внедрен жесткий контроль качества.
+              p В основу продукции лег большой накопленный опыт эксплуатации зарубежных аналогов на территории России с учетом климатических и эксплуатационных особенностей. Все это позволило добиться высокого качества продукции.
+              p Все изделия нашей Компании всегда есть в наличие на складе, что позволяет в кратчайшие сроки доставить их покупателю.
+              p Компания открыта для сотрудничества с региональными представителями, для которых мы готовы предложить выгодные ценовые предложения и гибкую систему оплаты.
+            +e.btn-wrapper
+              +b.A.btn--grey(href="#") Узнать больше
+          +e.right
+            +e.bg
+            +e.stamp
+              img(src="img/about-stamp.png", alt="Техника топлива")
+            +e.text-additional Производственные мощности Компании «Техника Топлива» включают в себя высокоточные токарно-фрезерные станки с ЧПУ, термопластавтоматы.
+
+    // About video
+    +b.SECTION.about-video
+      .container
+        +e.row
+          +e.left
+            +b.video
+              +e.H2.title Презентация компании «Техника Топлива»
+              +e.frame
+                video(width='1920', height='1080', autoplay='', loop='')
+                  source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
+                  img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+          +e.right
+            +e.map
+              +e.A.link(href="#") Увеличить карту
+            +e.stamp
+              img(src="img/video2.jpg", alt="Техника топлива")
+            +e.text-additional Новейшее оборудование с компьютерным управлением позволяет осуществлять качественное производство комплектующих для АЗС и ТРК с торговой маркой «Техника Топлива».
+
+    // Advantages
+    +b.SECTION.advantages
+      .container
+        +e.H2.title Конкурентные преимущества «Техника Топлива»
+        +e.UL.list
+          +e.item Высокое качество продукции «Техника Топлива»
+          +e.item Низкая цена на продукцию
+            br
+            | Высокая эффективность
+          +e.item Ассортимент продукции в наличие на складе в СПб
+          +e.item Реальные цены не зависят от курсов валют
+          +e.item Мы учитываем особенности эксплуатации в России
+          +e.item Гарантия на всю продукцию «Техника Топлива»
+
+    // About production
+    +b.SECTION.about-production
+      .container
+        +e.row
+          +e.left
+            +e.H2.title Производство «Техника Топлива» в Санкт-Петербурге
+            +e.text
+              p Российская компания «Техника Топлива» основана в 2017 году после долгой работы над прототипом отечественных комплектующих для автозаправочных комплексов и топливо-раздаточных станций.
+              p Специализация компании: производство комплектующих для АЗС и ТРК с высокими показателями износостойкости при эксплуатации.
+              p It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            +e.btn-wrapper
+              +b.A.btn--grey(href="#") Узнать больше о производстве
+          +e.right
+            +e.round-map
+              +e.round-map-bg
+
+    // Footer
+    +footer()
