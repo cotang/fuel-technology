@@ -1,0 +1,23 @@
+.not-found{
+  &__flex{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    flex: 0 0 453px;
+    max-width: 453px;
+  }
+  &__title{
+    font-size: 26px;
+    line-height: (30/26);
+    font-weight: normal;
+  }
+  &__subtitle{
+    font-size: 20px;
+    line-height: (22/20);
+    font-weight: normal;
+  }
+  &__btn-wrapper{
+    margin: 20px 0 20px;
+  }
+}

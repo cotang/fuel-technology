@@ -8,24 +8,27 @@ block content
     +b.SECTION.index-promo
       .container
         +e.video
-          +b.video
-            +e.frame
-              video(width='1920', height='1080', autoplay='', loop='')
-                source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
-                img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+          //- video(width='1920', height='1080', autoplay='', loop='')
+          //-   source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
+          //-   img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+          img(src="img/video-stop.png", alt="video-stop", height='700')
         +e.features
-          +b.feature--one
-            +e.H3.title Сделано в России
-            +e.P.text Изготовление комплектующих на территории России
-          +b.feature--two
-            +e.H3.title Комплектующие
-            +e.P.text Для автозаправочных станций и комплексов ТРК
-          +b.feature--three
-            +e.H3.title Контроль качества
-            +e.P.text Сертификация продукции в РосТест
-          +b.feature--four
-            +e.H3.title Где купить
-            +e.P.text Официальные дилеры в России и СНГ
+          +e.feature-item
+            +b.feature--one
+              +e.H3.title Сделано в России
+              +e.P.text Изготовление комплектующих на территории России
+          +e.feature-item
+            +b.feature--two
+              +e.H3.title Комплектующие
+              +e.P.text Для автозаправочных станций и комплексов ТРК
+          +e.feature-item
+            +b.feature--three
+              +e.H3.title Контроль качества
+              +e.P.text Сертификация продукции в РосТест
+          +e.feature-item
+            +b.feature--four
+              +e.H3.title Где купить
+              +e.P.text Официальные дилеры в России и СНГ
 
     // Footer
     +footer()

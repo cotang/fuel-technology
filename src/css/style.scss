@@ -16,24 +16,26 @@
 @import "partials/base/template";
 
 // Components
-// @import "partials/components/header";
-// @import "partials/components/btn";
-// @import "partials/components/promo";
-// @import "partials/components/advantages";
-// @import "partials/components/examples";
-// @import "partials/components/discount";
-// @import "partials/components/form";
-// @import "partials/components/reviews";
-// @import "partials/components/guaranty";
-// @import "partials/components/how-we-work";
-// @import "partials/components/additional-discount";
-// @import "partials/components/bubbles";
-// @import "partials/components/map";
-// @import "partials/components/important";
+@import "partials/components/header";
+@import "partials/components/btn";
+@import "partials/components/callback";
+@import "partials/components/breadcrumbs";
+@import "partials/components/footer";
 
-// @import "partials/components/footer";
+
+@import "partials/components/index";
+@import "partials/components/about";
+@import "partials/components/contacts";
+@import "partials/components/not-found";
+@import "partials/components/where-to-buy";
+@import "partials/components/quality";
+@import "partials/components/technology";
+@import "partials/components/production";
+@import "partials/components/services";
+
+
 // @import "partials/components/overlay";
 
-
+@import "partials/components/page";
 
 

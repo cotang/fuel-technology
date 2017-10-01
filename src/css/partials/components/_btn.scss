@@ -1,19 +1,43 @@
 .btn{
   display: inline-block;
   text-align: center;
-  text-transform: uppercase;
   outline: none;
   border: none;
-  font-size: 24px;
-  line-height: (28/24);
-  border-radius: 30px;
-  background-color: $pink;
-  padding: 15px 70px;
+  font-size: 14px;
+  line-height: (22/14);
+  border: 1px solid rgba($white, 0.5);
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 4px 12px;
   margin: 0;
   color: $text-white;
-  box-shadow: 0px 0px 10px 0px $pink;
-  &:hover, &:focus, &:active{
-    box-shadow: 0px 0px 20px 8px $pink;
+  // box-shadow: 0px 0px 10px 0px $pink;
+  // &:hover, &:focus, &:active{
+  //   box-shadow: 0px 0px 20px 8px $pink;
+  // }
+  &--light-grey{
+    background-color: rgba(#4c586a, 0.5);
+  }
+  &--grey{
+    background-color: transparent;
+    background-image: linear-gradient( to bottom, rgb(197,198,200) 0%, rgb(122,126,130) 100%);
+    color: $text-black;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    border: none;
+  }
+  &--download{
+    overflow: hidden;
+    padding: 6px 0 6px 34px;
+    width: 100%;
+    position: relative;
+    &:before{
+      content: '';
+      @include sprite($s-download);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 

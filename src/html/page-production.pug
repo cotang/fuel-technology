@@ -26,7 +26,7 @@ block content
             +e.text Компания «Техника Топлива» представляет ассортимент продукции: комплектующие для АЗС и ТРК с техническими описаниями по применению, назначению и размерами для монтажа на объектах (предприятиях). It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           +e.right
             +e.img
-              img(src="img/production-triangle.png", alt="Техника топлива")
+              img(src="img/production-aside.png", alt="Техника топлива")
         +e.row
           +e.left
             +b.production-catalog
@@ -39,10 +39,11 @@ block content
                   +e.article Артикул: ОМ 16.0
                   +e.text Отрывная поворотно-осевая муфта ОМ 16.0 предназначена для установки на АЗС на заправочные шланги перед заправочным пистолетом.
                   +e.btn-wrapper
-                    +e.price Цена:
+                    +e.price
+                      span Цена:
                       span 2000 руб./ед.
                     +e.order Заказ от 10 шт.
-                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+                    +e.A.link(href="page-production-single.html") Узнать больше
               +b.ARTICLE.production-catalog-item
                 +e.img
                   img(src="img/production-catalog-item.jpg", alt="production catalog item")
@@ -51,10 +52,11 @@ block content
                   +e.article Артикул: ОМ 16.1
                   +e.text Отрывная поворотно-осевая муфта ОМ 16.1 (папа-папа) и все ее комплектующие изготовлены на территории России.
                   +e.btn-wrapper
-                    +e.price Цена:
+                    +e.price
+                      span Цена:
                       span 2000 руб./ед.
                     +e.order Заказ от 10 шт.
-                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+                    +e.A.link(href="page-production-single.html") Узнать больше
               +b.ARTICLE.production-catalog-item
                 +e.img
                   img(src="img/production-catalog-item.jpg", alt="production catalog item")
@@ -63,14 +65,16 @@ block content
                   +e.article Артикул: ОМ 16.2
                   +e.text Применяется для монтажа на автозаправочные пистолеты АЗС и ТРК для легкового и грузового транспорта. Сертифицировано в РосТест РФ.
                   +e.btn-wrapper
-                    +e.price Цена:
+                    +e.price
+                      span Цена:
                       span 2000 руб./ед.
                     +e.order Заказ от 10 шт.
-                    +b.A.btn--more(href="page-production-single.html") Узнать больше
+                    +e.A.link(href="page-production-single.html") Узнать больше
           +e.right
             +e.download
               +b.download Вы можете скачать каталог продукции «Техника Топлива» в формате PDF.
-                +b.A.btn--grey--download(href="#") Скачать каталог
+                +e.btn-wrapper
+                  +b.A.btn--grey.--download(href="#") Скачать каталог
 
     // Footer
     +footer()

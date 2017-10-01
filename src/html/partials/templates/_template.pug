@@ -12,8 +12,8 @@ html(lang='ru', prefix='og: http://ogp.me/ns#')
     include ../components/_header.pug
 
     main
-      .container
-        a.callback(href="mailto:info@fueltechnology.ru", target="_blank") info@fueltechnology.ru
+      .container.callback-wrapper
+        a.callback(href="mailto:info@fueltechnology.ru", target="_blank", title="info@fueltechnology.ru")
       block content
 
     //- include ../components/_footer.pug

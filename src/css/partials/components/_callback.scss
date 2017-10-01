@@ -1,0 +1,10 @@
+.callback-wrapper{
+  position: relative;
+}
+.callback{
+  display: block;
+  @include sprite($s-green-btn);
+  position: absolute;
+  top: 70px;
+  right: 15px;
+}

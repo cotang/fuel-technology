@@ -17,8 +17,8 @@ block content
         +e.H1.title О компании «Техника Топлива»
         +e.text Основная информация о деятельности компании «Техника Топлива»: общие положения, презентация компании, конкурентные преимущества, геолокация производства компании и многое другое.
         +e.btn-wrapper
-          +b.A.btn(href="#") Узнать больше
-          +b.A.btn(href="#") Где купить
+          +b.A.btn--light-grey(href="#") Узнать больше
+          +b.A.btn--light-grey(href="#") Где купить
 
     // About common
     +b.SECTION.about-common
@@ -35,28 +35,27 @@ block content
               p Все изделия нашей Компании всегда есть в наличие на складе, что позволяет в кратчайшие сроки доставить их покупателю.
               p Компания открыта для сотрудничества с региональными представителями, для которых мы готовы предложить выгодные ценовые предложения и гибкую систему оплаты.
             +e.btn-wrapper
-              +b.A.btn--grey(href="#") Узнать больше
+              +b.A.btn--grey(href="#") Открыть таблицу анализа
           +e.right
             +e.bg
             +e.stamp
               img(src="img/about-stamp.png", alt="Техника топлива")
             +e.text-additional Производственные мощности Компании «Техника Топлива» включают в себя высокоточные токарно-фрезерные станки с ЧПУ, термопластавтоматы.
 
-    // About video
-    +b.SECTION.about-video
+    // About gallery
+    +b.SECTION.about-gallery
       .container
         +e.row
           +e.left
-            +b.video
+            +b.ARTICLE.about-video
               +e.H2.title Презентация компании «Техника Топлива»
-              +e.frame
-                video(width='1920', height='1080', autoplay='', loop='')
-                  source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
-                  img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+              //- video(width='1920', height='1080', autoplay='', loop='')
+              //-   source(src='files/data-modul.com/01_Home/data_modul_display.mp4', type='video/mp4')
+              //-   img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
+              img(src="img/video1.jpg", alt="video", width="550", height="310")
           +e.right
-            +e.map
-              +e.A.link(href="#") Увеличить карту
-            +e.stamp
+            +e.img-popup
+              +e.A.link(href="#") Увеличить
               img(src="img/video2.jpg", alt="Техника топлива")
             +e.text-additional Новейшее оборудование с компьютерным управлением позволяет осуществлять качественное производство комплектующих для АЗС и ТРК с торговой маркой «Техника Топлива».
 
@@ -65,14 +64,26 @@ block content
       .container
         +e.H2.title Конкурентные преимущества «Техника Топлива»
         +e.UL.list
-          +e.item Высокое качество продукции «Техника Топлива»
-          +e.item Низкая цена на продукцию
-            br
-            | Высокая эффективность
-          +e.item Ассортимент продукции в наличие на складе в СПб
-          +e.item Реальные цены не зависят от курсов валют
-          +e.item Мы учитываем особенности эксплуатации в России
-          +e.item Гарантия на всю продукцию «Техника Топлива»
+          +e.item
+            +b.advantage--one
+              p Высокое качество продукции «Техника Топлива»
+          +e.item
+            +b.advantage--two
+              p Низкая цена на продукцию
+                br
+                | Высокая эффективность
+          +e.item
+            +b.advantage--three
+              p Ассортимент продукции в наличие на складе в СПб
+          +e.item
+            +b.advantage--four
+              p Реальные цены не зависят от курсов валют
+          +e.item
+            +b.advantage--five
+              p Мы учитываем особенности эксплуатации в России
+          +e.item
+            +b.advantage--six
+              p Гарантия на всю продукцию «Техника Топлива»
 
     // About production
     +b.SECTION.about-production

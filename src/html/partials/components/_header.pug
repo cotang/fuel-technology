@@ -31,29 +31,29 @@ include ../abstracts/bemto/bemto.pug
         +e.UL.list
           +e.item--home
             a(href="index.html", title="Главная страница")
-          +e.item
+          +e.item--dropdown
             a(href="#") О компании
             +e.UL.sublist
               +e.subitem
                 a(href="page-about.html") О компании
               +e.subitem
                 a(href="page-news.html") Новости
-          +e.item
+          +e.item--active
             a(href="page-services.html") Услуги
-          +e.item
+          +e.item--dropdown
             a(href="#") Продукция
             +e.UL.sublist
               +e.subitem
                 a(href="page-production.html") Продукция
               +e.subitem
                 a(href="page-quality.html") Контроль качества
-          +e.item
+          +e.item--dropdown
             a(href="#") Технологии
             +e.UL.sublist
               +e.subitem
                 a(href="page-technology.html") Технологии производства
               +e.subitem
-                a(href="page-services.html") Статьи
+                a(href="page-articles.html") Статьи
           +e.item
             a(href="page-equipment.html") Оборудование
           +e.item
