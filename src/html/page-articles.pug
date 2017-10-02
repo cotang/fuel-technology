@@ -24,46 +24,51 @@ block content
       .container
         +e.list
           +b.ARTICLE.article
-            +e.img
-              img(src="img/article1.jpg", alt="article 1")
-            +e.H3.title Стандарты  качества комплектующих для АЗС
-            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            +e.A.link(href="page-articles-single.html")
+              +e.img
+                img(src="img/article1.jpg", alt="article 1")
+              +e.H3.title Стандарты  качества комплектующих для АЗС
+              +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           +b.ARTICLE.article
-            +e.img
-              img(src="img/article2.jpg", alt="article 2")
-            +e.H3.title Европейская сертификация качества комплектующих
-            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            +e.A.link(href="page-articles-single.html")
+              +e.img
+                img(src="img/article2.jpg", alt="article 2")
+              +e.H3.title Европейская сертификация качества комплектующих
+              +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           +b.ARTICLE.article
-            +e.img
-              img(src="img/article3.jpg", alt="article 3")
-            +e.H3.title Эффективность применения комплектующих компании «Техника Топлива»
-            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            +e.A.link(href="page-articles-single.html")
+              +e.img
+                img(src="img/article3.jpg", alt="article 3")
+              +e.H3.title Эффективность применения комплектующих компании «Техника Топлива»
+              +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           +b.ARTICLE.article
-            +e.img
-              img(src="img/article4.jpg", alt="article 4")
-            +e.H3.title Сравнительный анализ комплектующих производителей
-            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            +e.A.link(href="page-articles-single.html")
+              +e.img
+                img(src="img/article4.jpg", alt="article 4")
+              +e.H3.title Сравнительный анализ комплектующих производителей
+              +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           +b.ARTICLE.article
-            +e.img
-              img(src="img/article5.jpg", alt="article 5")
-            +e.H3.title Производственный цикл производства комплектующих
-            +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            +e.A.link(href="page-articles-single.html")
+              +e.img
+                img(src="img/article5.jpg", alt="article 5")
+              +e.H3.title Производственный цикл производства комплектующих
+              +e.text It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 
-        // Pagination
-        +b.pagination
-          +e.inner
-            +e.SPAN.page Вы смотрите
-            +e.UL.list
-              +e.item--active
-                a(href="page-articles.html") 1
-              +e.item
-                a(href="page-articles.html") 2
-              +e.item
-                a(href="page-articles.html") 3
-              +e.item
-                a(href="page-articles.html") 4
-              +e.item
-                a(href="page-articles.html") 5
+          // Pagination
+          +b.pagination
+            +e.inner
+              +e.SPAN.page Вы смотрите
+              +e.UL.list
+                +e.item--active
+                  a(href="page-articles.html") 1
+                +e.item
+                  a(href="page-articles.html") 2
+                +e.item
+                  a(href="page-articles.html") 3
+                +e.item
+                  a(href="page-articles.html") 4
+                +e.item
+                  a(href="page-articles.html") 5
 
-    // Footer
-    +footer()
+      // Footer
+      +footer()

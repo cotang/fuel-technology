@@ -21,7 +21,8 @@
 @import "partials/components/callback";
 @import "partials/components/breadcrumbs";
 @import "partials/components/footer";
-
+@import "partials/components/pagination";
+@import "partials/components/overlay";
 
 @import "partials/components/index";
 @import "partials/components/about";
@@ -32,9 +33,13 @@
 @import "partials/components/technology";
 @import "partials/components/production";
 @import "partials/components/services";
+@import "partials/components/news";
+@import "partials/components/articles";
 
-
-// @import "partials/components/overlay";
+@import "partials/components/single-service";
+@import "partials/components/single-production";
+@import "partials/components/single-news";
+@import "partials/components/single-article";
 
 @import "partials/components/page";
 

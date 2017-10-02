@@ -1,4 +1,8 @@
 .not-found{
+  background-color: #495563;
+  background-repeat: repeat;
+  background-position: center top;
+  background-image: url(../img/404-bg.jpg);
   &__flex{
     display: flex;
     align-items: center;

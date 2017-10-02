@@ -20,6 +20,10 @@
   }
 }
 .production-components{
+  background-color: #141c1b;
+  background-repeat: repeat;
+  background-position: center -1000px;
+  background-image: url(../img/bg-spot.jpg);
   padding: 20px 0 0;
   &__row{
     display: flex;

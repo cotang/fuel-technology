@@ -20,6 +20,10 @@
 }
 
 .quality-certificates{
+  background-color: #181e1f;
+  background-repeat: repeat;
+  background-position: center top;
+  background-image: url(../img/quality-bg.jpg);
   padding: 10px 0 40px;
   &__column{
     position: relative;

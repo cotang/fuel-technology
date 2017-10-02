@@ -1,0 +1,70 @@
+.single-service-promo{
+  background-color: #111010;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/service-single-promo.jpg);
+  background-size: cover;
+  padding: 0 0 130px;
+  &__title{
+    margin: -10px 0 0;
+    font-size: 26px;
+    padding: 0 0 20px;
+    font-weight: 400;
+  }
+  &__text{
+    max-width: 420px;
+    line-height: 1.6;
+  }
+  &__btn-wrapper{
+    margin-top: 20px;
+  }
+
+}
+.single-service{
+  &__inner{
+    background-color: #141c1b;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: url(../img/service-single-bg-vert.jpg);
+  }
+  &__text-wrapper{
+    position: relative;
+    padding: 5px 250px 0 0;
+  }
+  &__thumbnail{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding: 70px 0 0;
+  }
+  &__description{
+    margin: 15px 0 0;
+    font-style: italic;
+    color: #c7c7c7;
+    font-size: 13px;
+    line-height: (22/13);
+  }
+  &__text{
+    padding: 0 40px 0 0;
+    h2{
+      font-size: 22px;
+      line-height: 1;
+      font-weight: 400;
+    }
+    h3{
+      font-size: 20px;
+      line-height: (22/20);
+      font-weight: 400;
+    }
+  }
+  &__btn-wrapper{
+    margin: 35px 0 50px;
+    .btn{
+      border: 1px solid #333333;
+      background-color: rgba(#141414, 0.5);
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
