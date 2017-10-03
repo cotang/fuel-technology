@@ -5,15 +5,29 @@
   background-image: url(../img/production-promo.jpg);
   background-size: cover;
   padding: 0 0 140px;
+  @media (max-width: $breakpoint-xl){
+    padding: 0 0 125px;
+  }
+
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
     padding: 0 0 10px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      font-weight: 400;
+      font-size: 22px;
+      margin: -5px 0 0;
+      padding: 0 0 15px;
+    }
   }
   &__text{
     max-width: 420px;
     line-height: 1.6;
+    @media (max-width: $breakpoint-xl){
+      max-width: 320px;
+      line-height: 1.46;
+    }
   }
   &__btn-wrapper{
     margin-top: 20px;
@@ -25,17 +39,49 @@
   background-position: center -1000px;
   background-image: url(../img/bg-spot.jpg);
   padding: 20px 0 0;
+  @media (max-width: $breakpoint-xl){
+    padding: 5px 0 0;
+  }
+
   &__row{
     display: flex;
-    max-width: 100%;
+    &--lower{
+      @media (max-width: $breakpoint-xl){
+        flex-wrap: wrap;
+      }
+    }
   }
   &__left{
     flex: 0 0 700px;
     max-width: 700px;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 580px;
+      max-width: 580px;
+    }
+    &--lower{
+      @media (max-width: $breakpoint-xl){
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
   }
   &__right{
     flex: 0 0 250px;
     max-width: 250px;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 150px;
+      max-width: 150px;
+      padding: 10px 10px 0 0;
+    }
+    &--lower{
+      @media (max-width: $breakpoint-xl){
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: -1;
+        padding: 0;
+        margin: 0 0 15px;
+      }
+    }
   }
   &__title{
     font-size: 20px;
@@ -45,6 +91,9 @@
   &__text{
     line-height: 1.6;
     padding: 0 0 30px;
+    @media (max-width: $breakpoint-xl){
+      padding: 0 0 20px;
+    }
   }
   &__img{
     padding: 15px 0 0;
@@ -53,11 +102,19 @@
 
   &__download{
     margin-top: 40px;
+    @media (max-width: $breakpoint-xl){
+      margin-top: 0px;
+    }
   }
 }
 .production-catalog{
   max-width: 665px;
   padding: 0 0 60px;
+  @media (max-width: $breakpoint-xl){
+    max-width: 100%;
+    padding: 0 0 30px;
+  }
+
   &__title{
     background-color: #3d6a87;
     padding: 8px 17px;
@@ -158,7 +215,23 @@
   border-radius: 3px;
   border: 1px solid #6b6d6f;
   padding: 15px 25px;
+  @media (max-width: $breakpoint-xl){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+
   &__btn-wrapper{
     margin: 20px 0 0;
+    @media (max-width: $breakpoint-xl){
+      margin: 0;
+    }
+  }
+  span > span{
+    @media (max-width: $breakpoint-xl){
+      display: none;
+    }
   }
 }

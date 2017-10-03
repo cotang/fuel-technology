@@ -4,66 +4,104 @@
   background-position: center top;
   background-image: url(../img/index-bg2.jpg);
 
+  &__video{
+    height: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $breakpoint-xl){
+      height: 370px;
+    }
+  }
   &__features{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    @media (max-width: $breakpoint-xl){
+      margin: 0 -5px;
+      padding: 0 0 50px;
+    }
   }
   &__feature-item{
     flex: 0 0 25%;
     max-width: 25%;
-  }
-  &__video{
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 2px;
+    }
   }
 }
 
 .feature{
-  min-height: 245px;
-  padding: 10px 20px;
+  min-height: 230px;
+  padding: 10px 10px 10px 20px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
   position: relative;
+  overflow: hidden;
+  @media (max-width: $breakpoint-xl){
+    min-height: 170px;
+    padding: 10px 20px;
+  }
   &:before{
     content: '';
     display: block;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
-    overflow: hidden;
   }
   &--one{
     background-image: linear-gradient( 90deg, rgb(43,43,43) 0%, rgb(125,121,141) 100%);
     &:before{
+      width: 125px;
+      height: 113px;
+      bottom: 0;
+      right: 0;
       background-image: url(../img/feature-one.png);
-      background-position: bottom -5px left 20px;
+      @media (max-width: $breakpoint-xl){
+        bottom: 5px;
+      }
     }
   }
   &--two{
     background-image: linear-gradient( -45deg, rgb(106,136,156) 0%, rgb(106,136,156) 0%, rgb(119,149,169) 0%, rgb(118,144,162) 0%, rgb(84,110,127) 0%, rgb(106,137,158) 29%, rgb(106,137,158) 40%, rgb(80,106,124) 64%, rgb(53,74,90) 100%);
     &:before{
+      width: 116px;
+      height: 132px;
+      bottom: 0;
+      right: 15px;
       background-image: url(../img/feature-two.png);
-      background-position: bottom -5px right 10px;
+      @media (max-width: $breakpoint-xl){
+        right: 5px;
+        bottom: 5px;
+        transform: scale(1.1);
+      }
     }
   }
   &--three{
     background-image: linear-gradient( 180deg, rgb(63,74,82) 12%, rgb(60,62,60) 72%, rgb(51,53,51) 74%, rgb(53,54,53) 90%);
     &:before{
+      width: 157px;
+      height: 132px;
+      bottom: 0;
+      right: 0;
       background-image: url(../img/feature-three.png);
-      background-position: bottom 10px right 0px;
+      @media (max-width: $breakpoint-xl){
+        right: 0;
+        bottom: 0;
+        transform: scale(1.2);
+      }
     }
   }
   &--four{
     background-image: linear-gradient( 0deg, rgb(60,82,111) 4%, rgb(204,193,166) 20%, rgb(194,199,207) 27%, rgb(185,190,202) 32%, rgb(137,154,188) 45%, rgb(94,105,128) 66%, rgb(40,68,93) 100%);
     &:before{
+      width: 362px;
+      height: 170px;
+      bottom: 0;
+      right: -30px;
       background-image: url(../img/feature-four.png);
-      background-position: calc(50% - 35px) bottom;
-      // background-size: auto 200px;
+      @media (max-width: $breakpoint-xl){
+        right: 0;
+      }
     }
   }
 

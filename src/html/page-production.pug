@@ -27,8 +27,8 @@ block content
           +e.right
             +e.img
               img(src="img/production-aside.png", alt="Техника топлива")
-        +e.row
-          +e.left
+        +e.row--lower
+          +e.left--lower
             +b.production-catalog
               +e.H2.title Ассортимент продукции компании «Техника Топлива»
               +b.ARTICLE.production-catalog-item
@@ -70,9 +70,12 @@ block content
                       span 2000 руб./ед.
                     +e.order Заказ от 10 шт.
                     +e.A.link(href="page-production-single.html") Узнать больше
-          +e.right
+          +e.right--lower
             +e.download
-              +b.download Вы можете скачать каталог продукции «Техника Топлива» в формате PDF.
+              +b.download
+                span Вы можете скачать каталог продукции «Техника Топлива» в
+                  span формате
+                  | PDF.
                 +e.btn-wrapper
                   +b.A.btn--grey.--download(href="#") Скачать каталог
 

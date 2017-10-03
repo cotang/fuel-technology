@@ -5,15 +5,30 @@
   background-image: url(../img/articles-promo.jpg);
   background-size: cover;
   padding: 0 0 90px;
+  @media (max-width: $breakpoint-xl){
+    background-position: calc(50% - 80px) center;
+    padding: 0 0 100px;
+  }
+
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
     padding: 0 0 10px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      font-weight: 400;
+      font-size: 22px;
+      margin: -5px 0 0;
+      padding: 0 0 20px;
+    }
   }
   &__text{
     max-width: 500px;
     line-height: 1.6;
+    @media (max-width: $breakpoint-xl){
+      max-width: 475px;
+      line-height: 1.46;
+    }
   }
   &__btn-wrapper{
     margin-top: 20px;
@@ -21,20 +36,24 @@
 }
 
 .articles{
-  padding: 0 0 125px;
   background-color: #141c1b;
   background-repeat: repeat;
   background-position: center top;
   background-image: url(../img/articles-bg.jpg);
   &__list{
-    padding: 40px 0 10px;
+    padding: 40px 0 135px;
     max-width: 670px;
     position: relative;
     z-index: 1;
+    @media (max-width: $breakpoint-xl){
+      padding: 20px 0 25px;
+      max-width: 100%;
+    }
   }
   .pagination{
     border: none;
     background-color: #151515;
+    margin-top: 30px;
   }
 }
 .article{

@@ -7,4 +7,9 @@
   position: absolute;
   top: 70px;
   right: 15px;
+  @media (max-width: $breakpoint-xl){
+    transform: scale(0.8);
+    top: 40px;
+    right: 10px;
+  }
 }

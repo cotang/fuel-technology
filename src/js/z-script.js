@@ -15,12 +15,13 @@ jQuery(document).ready(function($){
   }
 
 
-  /* 404 - sticky footer */
-  // var footerHeight = $('.footer').outerHeight();
-  if ($(window).height() >= $('body').height()){
-    $('.page').addClass('page--fixed');
-    $('.footer').addClass('footer--fixed');
-  }
+  /* Sticky footer */
+  // if ( $(window).width() >= 980 ){
+    if ($(window).height() >= $('body').height() ){
+      $('.page > *').addClass('fixed');
+      $('.footer').addClass('footer--fixed');
+    }
+  // }
 
 
   /* Gallery in modal window */
@@ -38,8 +39,12 @@ jQuery(document).ready(function($){
   });
 
 
-
-
+  if ( $(window).width() < 980 ){
+    $('.models__title').click(function(e){
+      e.preventDefault();
+      $(this).closest('.models').find('.models__list').slideToggle();
+    });
+  }
 
 });
 

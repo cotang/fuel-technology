@@ -5,15 +5,30 @@
   background-image: url(../img/news-promo.jpg);
   background-size: cover;
   padding: 0 0 115px;
+  @media (max-width: $breakpoint-xl){
+    background-position: calc(50% + 70px) center;
+    padding: 0 0 120px;
+  }
+
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
     padding: 0 0 10px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      font-weight: 400;
+      font-size: 22px;
+      margin: -5px 0 0;
+      padding: 0 0 20px;
+    }
   }
   &__text{
     max-width: 400px;
     line-height: 1.6;
+    @media (max-width: $breakpoint-xl){
+      max-width: 370px;
+      line-height: 1.46;
+    }
   }
   &__btn-wrapper{
     margin-top: 20px;
@@ -21,12 +36,12 @@
 }
 
 .news{
-  padding: 0 0 70px;
   background-color: #141c1b;
   background-repeat: repeat;
   background-position: center -1000px;
   background-image: url(../img/bg-spot.jpg);
   &__column{
+    padding: 0 0 70px;
     position: relative;
     &:before{
       content: '';
@@ -38,14 +53,23 @@
       background-repeat: no-repeat;
       background-position: center top;
       background-image: url(../img/news-i.png);
+      @media (max-width: $breakpoint-xl){
+        display: none;
+      }
     }
   }
-
   &__list{
     padding: 40px 0 20px;
     max-width: 670px;
     position: relative;
     z-index: 1;
+    @media (max-width: $breakpoint-xl){
+      padding: 20px 0 20px;
+      max-width: 100%;
+    }
+  }
+  .pagination{
+    background-color: rgba(#000, 0.7);
   }
 }
 .news-item{

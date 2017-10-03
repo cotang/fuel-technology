@@ -4,31 +4,54 @@
   background-position: center -1000px;
   background-image: url(../img/bg-spot.jpg);
   background-size: cover;
-  // padding: 0 0 130px;
+  @media (max-width: $breakpoint-xl){
+    background-position: center top;
+  }
+
   &__title{
     margin: -15px 0 0;
     font-size: 26px;
     padding: 0 0 30px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      font-weight: 400;
+      font-size: 22px;
+      padding: 0 0 20px;
+    }
   }
   &__row{
     position: relative;
     padding: 0 250px 0 0;
+    @media (max-width: $breakpoint-xl){
+      padding: 0;
+    }
   }
   &__production-right{
     position: absolute;
     top: 0;
     right: 0;
     width: 250px;
-    // padding: 70px 0 0;
+    @media (max-width: $breakpoint-xl){
+      position: static;
+      width: 100%;
+    }
   }
   &__production-left{
     padding: 0 30px 0 0;
+    @media (max-width: $breakpoint-xl){
+      padding: 0;
+    }
   }
 }
+
+
 .models{
   background-color: rgba(#000000, 0.3);
   padding: 0 0 15px;
+  @media (max-width: $breakpoint-xl){
+    padding: 0;
+    border-bottom: 1px solid #454548;
+  }
   &__title{
     margin: 0;
     color: #cccccc;
@@ -36,11 +59,32 @@
     line-height: (22/13);
     padding: 10px 15px;
     border-bottom: 1px solid #454548;
+    @media (max-width: $breakpoint-xl){
+      border-bottom: none;
+      cursor: pointer;
+      text-align: center;
+      background-image: linear-gradient( 180deg, rgb(204,204,204) 0%, rgb(159,159,159) 100%);
+      color: #333333;
+      text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+    }
+    span{
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 10px;
+        @include sprite($s-models-burger);
+      }
+    }
   }
   &__list{
     padding-left: 0;
     margin: 0;
     list-style-type: none;
+    @media (max-width: $breakpoint-xl){
+      display: none;
+      background-color: #dedede;
+    }
   }
   &__item{
     font-size: 14px;
@@ -49,6 +93,9 @@
       display: inline-block;
       color: #f6f6f6;
       padding: 8px 15px;
+      @media (max-width: $breakpoint-xl){
+        color: #171717;
+      }
       &:hover, &:focus{
         color: #ff8e14;
       }
@@ -66,12 +113,21 @@
   &__img{
     flex: 0 0 50%;
     max-width: 50%;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 335px;
+      max-width: 335px;
+    }
   }
   &__text-wrapper{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 15px 25px;
     color: #666666;
+    @media (max-width: $breakpoint-xl){
+      padding: 15px 20px;
+      flex: 1 1 auto;
+      max-width: 100%;
+    }
   }
   &__article{
     font-size: 12px;
@@ -86,6 +142,10 @@
     margin-bottom: 10px;
     font-size: 12px;
     line-height: (22/12);
+    @media (max-width: $breakpoint-xl){
+      margin-bottom: 5px;
+    }
+
     span:last-of-type{
       color: #171717;
     }
@@ -108,6 +168,9 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 5px;
+    @media (max-width: $breakpoint-xl){
+      justify-content: flex-start;
+    }
     .btn{
       padding: 6px 20px;
       border: 1px solid #747474;
@@ -132,15 +195,33 @@
 }
 
 .production-item-text{
+  @media (max-width: $breakpoint-xl){
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__title{
     font-weight: 400;
     border-bottom: 1px solid #3b3f43;
+    @media (max-width: $breakpoint-xl){
+      font-size: 17px;
+      color: #cccccc;
+    }
   }
   &__use{
     padding: 15px 0;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 10px 25px 0 0;
+    }
   }
   &__make{
     padding: 15px 0;
+    @media (max-width: $breakpoint-xl){
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 10px 0 0;
+    }
   }
   &__text-wrapper{
 
@@ -153,6 +234,9 @@
   }
   &__btn-wrapper{
     margin: 15px 0 110px;
+    @media (max-width: $breakpoint-xl){
+      margin: 15px 0 50px;
+    }
     .btn{
       border: 1px solid #333333;
       color: #999999;

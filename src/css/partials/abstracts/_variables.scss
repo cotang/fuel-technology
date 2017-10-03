@@ -16,23 +16,21 @@ $grid-gutter-width:           30px !default;
 
 
 $screen-xs:                   0; // Extra small screen / phone
-// $screen-sm:                   480px; // Small screen / phone
-$screen-md:                   768px; // Medium screen / tablet
-// $screen-lg:                   1024px; // Large screen / desktop
-$screen-xl:                   1200px; // Extra large screen / wide desktop
+$screen-md:                   750px; // Medium screen / tablet
+$screen-xl:                   980px; // Extra large screen / wide desktop
 
 
-$container-max-widths: (
-        md:                   768px,
-        xl:                   980px
-) !default;
+// $container-max-widths: (
+//         md:                   730px,
+//         xl:                   980px
+// ) !default;
 
 
-$grid-breakpoints: (
-        xs:                   0,
-        md:                   768px,
-        xl:                   980px
-) !default;
+// $grid-breakpoints: (
+//         xs:                   0,
+//         md:                   768px,
+//         xl:                   980px
+// ) !default;
 
 
 

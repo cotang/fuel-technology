@@ -5,18 +5,28 @@
   background-image: url(../img/quality-promo.jpg);
   background-size: cover;
   padding: 0 0 90px;
+  @media (max-width: $breakpoint-xl){
+    padding: 0 0 120px;
+  }
+
   &__title{
-    // max-width: 400px;
     margin: 0;
     font-size: 26px;
     padding: 0 0 10px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      font-weight: 400;
+      font-size: 22px;
+    }
   }
   &__text{
     max-width: 420px;
     line-height: 1.6;
+    @media (max-width: $breakpoint-xl){
+      max-width: 320px;
+      line-height: 1.45;
+    }
   }
-
 }
 
 .quality-certificates{
@@ -37,6 +47,9 @@
       position: absolute;
       top: 70px;
       right: -80px;
+      @media (max-width: $breakpoint-xl){
+        display: none;
+      }
     }
   }
   &__title{
@@ -44,16 +57,27 @@
     font-size: 20px;
     line-height: (22/20);
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      max-width: 100%;
+    }
   }
   &__text{
     max-width: 665px;
     margin-bottom: 25px;
+    @media (max-width: $breakpoint-xl){
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
   }
   &__list{
     padding-left: 0;
     margin: 0;
     list-style-type: none;
     max-width: 665px;
+    @media (max-width: $breakpoint-xl){
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
   }
   &__item{
     margin-bottom: 10px;

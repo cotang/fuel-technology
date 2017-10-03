@@ -5,15 +5,29 @@
   background-image: url(../img/service-single-promo.jpg);
   background-size: cover;
   padding: 0 0 130px;
+  @media (max-width: $breakpoint-xl){
+    background-position: calc(50% + 30px) center;
+    padding: 0 0 125px;
+  }
+
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
     padding: 0 0 20px;
     font-weight: 400;
+    @media (max-width: $breakpoint-xl){
+      margin: -5px 0 0;
+      font-weight: 400;
+      font-size: 22px;
+    }
   }
   &__text{
     max-width: 420px;
     line-height: 1.6;
+    @media (max-width: $breakpoint-xl){
+      max-width: 320px;
+      line-height: 1.46;
+    }
   }
   &__btn-wrapper{
     margin-top: 20px;
@@ -30,6 +44,9 @@
   &__text-wrapper{
     position: relative;
     padding: 5px 250px 0 0;
+    @media (max-width: $breakpoint-xl){
+      padding: 15px 0 0;
+    }
   }
   &__thumbnail{
     position: absolute;
@@ -37,6 +54,20 @@
     right: 0;
     width: 250px;
     padding: 70px 0 0;
+    @media (max-width: $breakpoint-xl){
+      position: static;
+      width: 100%;
+      padding: 0;
+      background-color: rgba(#000, 0.2);
+      display: flex;
+      align-items: center;
+    }
+    img{
+      @media (max-width: $breakpoint-xl){
+        flex: 0 0 155px;
+        max-width: 155px;
+      }
+    }
   }
   &__description{
     margin: 15px 0 0;
@@ -44,9 +75,18 @@
     color: #c7c7c7;
     font-size: 13px;
     line-height: (22/13);
+    @media (max-width: $breakpoint-xl){
+      margin: 0;
+      padding: 0 20px;
+    }
   }
   &__text{
     padding: 0 40px 0 0;
+    @media (max-width: $breakpoint-xl){
+      padding: 0;
+      margin: 35px 0 0;
+    }
+
     h2{
       font-size: 22px;
       line-height: 1;

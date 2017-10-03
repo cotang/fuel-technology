@@ -11,10 +11,10 @@
   padding: 4px 12px;
   margin: 0;
   color: $text-white;
-  // box-shadow: 0px 0px 10px 0px $pink;
-  // &:hover, &:focus, &:active{
-  //   box-shadow: 0px 0px 20px 8px $pink;
-  // }
+  &:hover, &:focus, &:active{
+    background-color: #316e91;
+  }
+
   &--light-grey{
     background-color: rgba(#4c586a, 0.5);
   }
@@ -25,12 +25,22 @@
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
     font-weight: 700;
     border: none;
+    &:hover, &:focus, &:active{
+      background-image: none;
+      background-color: #316e91;
+    }
   }
   &--download{
     overflow: hidden;
-    padding: 6px 0 6px 34px;
+    white-space: nowrap;
+    padding: 6px 6px 6px 40px;
     width: 100%;
     position: relative;
+    @media (max-width: $breakpoint-xl){
+      padding: 6px 16px 6px 50px;
+      display: block;
+    }
+
     &:before{
       content: '';
       @include sprite($s-download);

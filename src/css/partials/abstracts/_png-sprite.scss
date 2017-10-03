@@ -174,6 +174,17 @@ $s-header-pin-total-width: 208px;
 $s-header-pin-total-height: 201px;
 $s-header-pin-image: '../img/png-sprite.png';
 $s-header-pin: (148px, 101px, -148px, -101px, 11px, 15px, 208px, 201px, '../img/png-sprite.png', 's-header-pin', );
+$s-models-burger-name: 's-models-burger';
+$s-models-burger-x: 137px;
+$s-models-burger-y: 85px;
+$s-models-burger-offset-x: -137px;
+$s-models-burger-offset-y: -85px;
+$s-models-burger-width: 15px;
+$s-models-burger-height: 13px;
+$s-models-burger-total-width: 208px;
+$s-models-burger-total-height: 201px;
+$s-models-burger-image: '../img/png-sprite.png';
+$s-models-burger: (137px, 85px, -137px, -85px, 15px, 13px, 208px, 201px, '../img/png-sprite.png', 's-models-burger', );
 $s-nav-house-name: 's-nav-house';
 $s-nav-house-x: 137px;
 $s-nav-house-y: 64px;
@@ -210,7 +221,7 @@ $s-plus: (168px, 158px, -168px, -158px, 17px, 17px, 208px, 201px, '../img/png-sp
 $spritesheet-width: 208px;
 $spritesheet-height: 201px;
 $spritesheet-image: '../img/png-sprite.png';
-$spritesheet-sprites: ($s-advantage1, $s-advantage2, $s-advantage3, $s-advantage4, $s-advantage5, $s-advantage6, $s-articles-i, $s-articles-more, $s-cert-plus, $s-download, $s-gallery-left, $s-gallery-right, $s-green-btn, $s-hd, $s-header-pin, $s-nav-house, $s-play-video, $s-plus, );
+$spritesheet-sprites: ($s-advantage1, $s-advantage2, $s-advantage3, $s-advantage4, $s-advantage5, $s-advantage6, $s-articles-i, $s-articles-more, $s-cert-plus, $s-download, $s-gallery-left, $s-gallery-right, $s-green-btn, $s-hd, $s-header-pin, $s-models-burger, $s-nav-house, $s-play-video, $s-plus, );
 $spritesheet: (208px, 201px, '../img/png-sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
