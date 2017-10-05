@@ -9,6 +9,25 @@
     background-position: calc(50% + 70px) center;
     padding: 0 0 120px;
   }
+  @media (max-width: $breakpoint-md){
+    background-color: #141c1b;
+    background-repeat: repeat;
+    background-position: center -1000px;
+    background-image: url(../img/bg-spot.jpg);
+    background-size: 100%;
+    padding: 0;
+  }
+
+  .breadcrumbs{
+    @media (max-width: $breakpoint-md){
+      background-color: #111010;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(../img/news-promo.jpg);
+      background-size: cover;
+      padding: 15px 15px 115px;
+    }
+  }
 
   &__title{
     margin: -10px 0 0;
@@ -21,6 +40,11 @@
       margin: -5px 0 0;
       padding: 0 0 20px;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 10px 15px 0;
+      font-size: 18px;
+    }
   }
   &__text{
     max-width: 400px;
@@ -29,9 +53,10 @@
       max-width: 370px;
       line-height: 1.46;
     }
-  }
-  &__btn-wrapper{
-    margin-top: 20px;
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 0;
+      max-width: 100%;
+    }
   }
 }
 
@@ -43,6 +68,10 @@
   &__column{
     padding: 0 0 70px;
     position: relative;
+    @media (max-width: $breakpoint-md){
+      padding: 0 0 20px;
+    }
+
     &:before{
       content: '';
       position: absolute;
@@ -67,19 +96,34 @@
       padding: 20px 0 20px;
       max-width: 100%;
     }
+    @media (max-width: $breakpoint-md){
+      padding: 10px 0 0;
+    }
   }
   .pagination{
     background-color: rgba(#000, 0.7);
+    @media (max-width: $breakpoint-md){
+      border: none;
+      margin-top: 20px;
+    }
   }
 }
 .news-item{
   margin-bottom: 10px;
+  @media (max-width: $breakpoint-md){
+    margin: 0 15px 5px;
+  }
+
   &__link{
     display: block;
     position: relative;
     border: 1px solid #3f3e3e;
     background-color: rgba(#000, 0.7);
     padding: 0 0 25px;
+    @media (max-width: $breakpoint-md){
+      padding: 0 0 10px;
+    }
+
     &:hover, &:focus{
       background-color: rgba(#333, 0.7);
       .news-item__text{
@@ -88,6 +132,7 @@
     }
   }
   &__date{
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -99,6 +144,11 @@
     font-weight: 700;
     color: #ffb040;
     padding: 15px 0;
+    @media (max-width: $breakpoint-md){
+      position: static;
+      text-align: left;
+      padding: 10px 10px 0;
+    }
   }
   &__title{
     margin: 15px 0 10px 110px;
@@ -106,12 +156,21 @@
     font-size: 17px;
     line-height: (22/17);
     font-weight: 400;
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      font-size: 14px;
+      margin: 5px 0;
+    }
   }
   &__text{
     display: block;
     margin-left: 110px;
     padding: 0 10px;
     color: #999999;
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      font-size: 13px;
+    }
   }
 }
 

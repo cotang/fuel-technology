@@ -2,6 +2,10 @@
   padding: 30px 0;
   text-align: center;
   position: relative;
+  @media (max-width: $breakpoint-md){
+    padding: 10px 0;
+  }
+
   &:before{
     content: '';
     position: absolute;
@@ -26,5 +30,14 @@
     line-height: (30/13);
     color: #d7d7d7;
     opacity: 0.7;
+    @media (max-width: $breakpoint-md){
+      font-size: 12px;
+      line-height: (20/12);
+    }
+    span{
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
   }
 }

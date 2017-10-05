@@ -46,5 +46,22 @@ jQuery(document).ready(function($){
     });
   }
 
+  if ( $(window).width() < 768 ){
+    $('.hamburger').click(function(e){
+      e.preventDefault();
+      $(this).closest('.nav').find('.nav__list').slideToggle();
+    });
+
+    $('.btn--link-more').click(function(e){
+      e.preventDefault();
+      $(this).closest('.about-common__text').find('p').show();
+      $(this).closest('.about-common__text').find('.about-common__btn-wrapper').show();
+      $(this).hide();
+    });
+  }
+
+
+
+
 });
 

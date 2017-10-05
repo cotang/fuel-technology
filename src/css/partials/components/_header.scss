@@ -5,6 +5,9 @@
     color: $text-black;
     position: relative;
     z-index: 1;
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px;
+    }
   }
   &__wrapper{
     display: flex;
@@ -16,22 +19,41 @@
     max-width: 33.3333%;
     margin: 12px 0;
     padding-left: 15px;
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 auto;
+      padding-left: 45px;
+      margin: 0;
+    }
   }
   &__logo{
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     text-align: center;
     margin: 12px 0;
+    @media (max-width: $breakpoint-md){
+      order: -1;
+      flex: 0 0 150px;
+      max-width: 150px;
+      margin: 8px 0;
+    }
   }
   &__call{
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     text-align: right;
     margin: 12px 0;
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 auto;
+      margin: 0;
+    }
   }
 
   &__nav{
     background-image: linear-gradient( to left, #3d5668 0%, #3e7b9f 50%, #3d5668 100%);
+    @media (max-width: $breakpoint-md){
+      background-image: none;
+      background-color: #376c8c;
+    }
   }
 }
 
@@ -39,6 +61,21 @@
   display: inline-block;
   width: 170px;
   height: 83px;
+  @media (max-width: $breakpoint-md){
+    width: auto;
+    height: auto;
+  }
+  &__img-mobile{
+    display: none;
+    @media (max-width: $breakpoint-md){
+      display: block;
+    }
+  }
+  &__img{
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
+  }
 }
 
 .address{
@@ -52,14 +89,39 @@
     position: absolute;
     top: 0;
     left: -15px;
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
+  }
+  &__text{
+    display: inline;
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
   }
   a{
     color: #666666;
+    &:after{
+      content: '';
+      display: none;
+      @include sprite($s-header-pin-mobile);
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
+    &:hover:after{
+      @include sprite($s-header-pin-mobile-hover);
+    }
+    span{
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+    }
   }
 }
 
 .call{
-  span{
+  &__free{
     display: block;
     font-family: $Roboto;
     color: #666666;
@@ -67,6 +129,9 @@
     line-height: (30/14);
     @media (max-width: $breakpoint-xl){
       line-height: 1;
+    }
+    @media (max-width: $breakpoint-md){
+      display: none;
     }
   }
   a{
@@ -78,10 +143,31 @@
       display: inline-block;
       margin-bottom: 5px;
     }
+    @media (max-width: $breakpoint-md){
+      display: block;
+      margin-bottom: 0;
+    }
+    &:after{
+      content: '';
+      display: none;
+      @include sprite($s-header-tel-mobile);
+      @media (max-width: $breakpoint-md){
+        display: block;
+      }
+    }
+    &:hover:after{
+      @include sprite($s-header-tel-mobile-hover);
+    }
+    span{
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+    }
   }
 }
 
 .nav{
+  position: relative;
   font-size: 17px;
   line-height: (30/17);
   font-family: $Roboto;
@@ -94,21 +180,26 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-  //   @media (max-width: $breakpoint-xl){
-  //     display: none;
-  //     position: absolute;
-  //     top: 100%;
-  //     left: 0;
-  //     width: 100%;
-  //     background-color: $white;
-  //     text-align: center;
-  //     z-index: 2;
-  //   }
+    @media (max-width: $breakpoint-md){
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      z-index: 2;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #376c8c;
+    }
+
   }
   &__item{
     flex: 1 1 auto;
     text-align: center;
     position: relative;
+    @media (max-width: $breakpoint-md){
+      text-align: left;
+    }
+
     > a{
       width: 100%;
       display: inline-block;
@@ -116,10 +207,17 @@
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
       transition: none;
+      @media (max-width: $breakpoint-md){
+        padding: 3px 15px;
+        border: none;
+      }
       &:hover{
         background-image: linear-gradient( to left, #3681b3 0%, #3c96c7 50%, #3681b3 100%);
         border-left: 1px solid #295979;
         border-right: 1px solid #295979;
+        @media (max-width: $breakpoint-md){
+          border: none;
+        }
       }
     }
     &--home{
@@ -132,6 +230,10 @@
           @include sprite($s-nav-house);
         }
       }
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+
     }
     &--active{
       overflow-y: hidden;
@@ -147,11 +249,25 @@
         left: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
         box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+        @media (max-width: $breakpoint-md){
+          display: none;
+        }
       }
       > a{
         background-image: linear-gradient( to left, #3681b3 0%, #3c96c7 50%, #3681b3 100%);
         border-left: 1px solid #295979;
         border-right: 1px solid #295979;
+        @media (max-width: $breakpoint-md){
+          background-image: none;
+          border: none;
+        }
+      }
+    }
+    &--dropdown{
+      > a{
+        @media (max-width: $breakpoint-md){
+          display: none;
+        }
       }
     }
     &:hover > .nav__sublist{
@@ -171,6 +287,13 @@
     border: 1px solid #295a79;
     width: 240px;
     text-align: left;
+    @media (max-width: $breakpoint-md){
+      position: static;
+      display: block;
+      width: auto;
+      background-color: transparent;
+      border: none;
+    }
   }
   &__subitem{
     > a{
@@ -180,10 +303,17 @@
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
       transition: none;
+      @media (max-width: $breakpoint-md){
+        border: none;
+        padding: 3px 15px;
+      }
       &:hover{
         background-image: linear-gradient( to left, #3681b3 0%, #3c96c7 50%, #3681b3 100%);
         border-top: 1px solid #295979;
         border-bottom: 1px solid #295979;
+        @media (max-width: $breakpoint-md){
+          border: none;
+        }
       }
     }
     &:first-of-type{
@@ -199,16 +329,12 @@
   }
   &__hamburger{
     display: none;
-  //   @media (max-width: $breakpoint-md){
-  //     right: 0px !important;
-  //   }
-  //   @media (max-width: $breakpoint-xl){
-  //     display: block;
-  //     position: absolute;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     right: 20px;
-  //   }
+    padding: 2px 0;
+    text-align: center;
+    border-bottom: 1px solid #326685;
+    @media (max-width: $breakpoint-md){
+      display: block;
+    }
   }
 }
 
@@ -217,11 +343,10 @@
 
 
 .hamburger{
-  background-image: url(../img/001-menu.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  width: 36px;
-  height: 36px;
+  text-transform: uppercase;
+  &:before{
+    content: '';
+    display: inline-block;
+    @include sprite($s-nav-burger);
+  }
 }

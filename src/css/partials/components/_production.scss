@@ -8,6 +8,26 @@
   @media (max-width: $breakpoint-xl){
     padding: 0 0 125px;
   }
+  @media (max-width: $breakpoint-md){
+    background-color: #141c1b;
+    background-repeat: repeat;
+    background-position: center -1000px;
+    background-image: url(../img/bg-spot.jpg);
+    background-size: 100%;
+    padding: 0;
+  }
+
+  .breadcrumbs{
+    @media (max-width: $breakpoint-md){
+      background-color: #111010;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(../img/production-promo.jpg);
+      background-size: cover;
+      padding: 15px 15px 110px;
+    }
+  }
+
 
   &__title{
     margin: -10px 0 0;
@@ -20,6 +40,9 @@
       margin: -5px 0 0;
       padding: 0 0 15px;
     }
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
   }
   &__text{
     max-width: 420px;
@@ -27,6 +50,9 @@
     @media (max-width: $breakpoint-xl){
       max-width: 320px;
       line-height: 1.46;
+    }
+    @media (max-width: $breakpoint-md){
+      display: none;
     }
   }
   &__btn-wrapper{
@@ -45,6 +71,11 @@
 
   &__row{
     display: flex;
+    @media (max-width: $breakpoint-md){
+      flex-wrap: wrap;
+      position: relative;
+    }
+
     &--lower{
       @media (max-width: $breakpoint-xl){
         flex-wrap: wrap;
@@ -58,6 +89,11 @@
       flex: 0 0 580px;
       max-width: 580px;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
     &--lower{
       @media (max-width: $breakpoint-xl){
         flex: 0 0 100%;
@@ -73,6 +109,12 @@
       max-width: 150px;
       padding: 10px 10px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+
     &--lower{
       @media (max-width: $breakpoint-xl){
         flex: 0 0 100%;
@@ -81,12 +123,20 @@
         padding: 0;
         margin: 0 0 15px;
       }
+      @media (max-width: $breakpoint-xl){
+        margin: 0;
+      }
     }
   }
   &__title{
     font-size: 20px;
     line-height: (22/20);
     font-weight: 400;
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 10px 15px 10px;
+      font-size: 18px;
+    }
   }
   &__text{
     line-height: 1.6;
@@ -94,10 +144,24 @@
     @media (max-width: $breakpoint-xl){
       padding: 0 0 20px;
     }
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 15px;
+      line-height: 1.36;
+    }
   }
   &__img{
     padding: 15px 0 0;
     text-align: center;
+    @media (max-width: $breakpoint-md){
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      transform: translateY(10px);
+      right: 15px;
+      padding: 0;
+      width: 56px;
+      height: 56px;
+    }
   }
 
   &__download{
@@ -112,7 +176,7 @@
   padding: 0 0 60px;
   @media (max-width: $breakpoint-xl){
     max-width: 100%;
-    padding: 0 0 30px;
+    padding: 0;
   }
 
   &__title{
@@ -123,6 +187,15 @@
     font-size: 16px;
     line-height: (22/16);
     color: $text-white;
+    @media (max-width: $breakpoint-md){
+      text-align: center;
+      padding: 10px 15px;
+    }
+    span{
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+    }
   }
 }
 
@@ -131,12 +204,27 @@
   color: #353535;
   margin-bottom: 3px;
   display: flex;
+  @media (max-width: $breakpoint-md){
+    display: block;
+    position: relative;
+  }
   &__img{
     flex: 0 0 160px;
     max-width: 160px;
+    @media (max-width: $breakpoint-md){
+      width: 105px;
+      height: 105px;
+      position: absolute;
+    }
   }
   &__text-wrapper{
     flex: 1 1 auto;
+  }
+  &__title-wrapper{
+    @media (max-width: $breakpoint-md){
+      margin-left: 105px;
+      min-height: 105px;
+    }
   }
   &__title{
     font-size: 16px;
@@ -144,27 +232,49 @@
     margin: 15px 0 0;
     padding: 0 20px;
     font-weight: 700;
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 10px 15px 5px;
+      font-size: 14px;
+    }
   }
   &__article{
     font-size: 11px;
     line-height: 2;
     font-weight: 700;
     padding: 0 20px 5px;
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 0;
+    }
   }
   &__text{
     padding: 0 20px 5px;
     border-bottom: 1px solid #afafaf;
     font-size: 13px;
     line-height: (24/13);
+    @media (max-width: $breakpoint-md){
+      border-top: 1px solid #999999;
+      padding: 7px 15px;
+      line-height: 1.46;
+    }
   }
   &__btn-wrapper{
     border-top: 1px solid #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: $breakpoint-md){
+      display: block;
+      position: relative;
+    }
   }
   &__price{
     padding: 10px 20px;
+    @media (max-width: $breakpoint-md){
+      font-size: 13px;
+      padding: 5px 15px 5px;
+    }
+
     span{
       &:first-of-type{
         font-size: 13px;
@@ -178,8 +288,26 @@
     font-size: 13px;
     line-height: (22/13);
     font-weight: 700;
+    @media (max-width: $breakpoint-md){
+      font-size: 13px;
+      padding: 0 15px 5px;
+    }
+  }
+  &__link-wrapper{
+    @media (max-width: $breakpoint-md){
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 5px;
+    }
   }
   &__link{
+    display: block;
     padding: 10px 20px;
     color: #3d6a87;
     background-image: linear-gradient( 0deg, rgb(207,207,207) 0%, rgb(234,234,234) 100%);
@@ -187,8 +315,18 @@
     line-height: (22/13);
     font-weight: 700;
     border-left: 1px solid #ffffff;
-    // border-bottom: 1px solid #ffffff;
     position: relative;
+    @media (max-width: $breakpoint-md){
+      // background-image: none;
+      display: inline-block;
+      border: 1px solid #999999;
+      border-radius: 3px;
+      padding: 5px 18px;
+      color: #333333;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
     &:before{
       content: '';
       position: absolute;
@@ -197,6 +335,9 @@
       width: 1px;
       height: 100%;
       background-color: #afafaf;
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
     }
     &:after{
       content: '';
@@ -206,6 +347,9 @@
       width: 1px;
       height: 100%;
       background-color: #ffffff;
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
     }
   }
 }
@@ -221,15 +365,29 @@
     align-items: center;
     padding: 10px 20px;
   }
-
+  @media (max-width: $breakpoint-md){
+    display: block;
+    border: none;
+    border-radius: 0;
+    padding: 10px 60px 15px 15px;
+  }
 
   &__btn-wrapper{
     margin: 20px 0 0;
     @media (max-width: $breakpoint-xl){
       margin: 0;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 10px 0 0;
+    }
   }
+
   span > span{
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
+  }
+  span > span > span{
     @media (max-width: $breakpoint-xl){
       display: none;
     }

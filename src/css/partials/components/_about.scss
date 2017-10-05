@@ -8,6 +8,24 @@
   @media (max-width: $breakpoint-xl){
     padding: 0 0 95px;
   }
+  @media (max-width: $breakpoint-md){
+    background-color: #475567;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: url(../img/about-bg.jpg);
+    background-size: 100%;
+    padding: 0 0 20px;
+  }
+  .breadcrumbs{
+    @media (max-width: $breakpoint-md){
+      background-color: #475567;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url(../img/about-promo.jpg);
+      background-size: cover;
+      padding: 15px 15px 100px;
+    }
+  }
 
   &__title{
     margin: 0;
@@ -19,15 +37,25 @@
       font-weight: 400;
       font-size: 22px;
     }
+    @media (max-width: $breakpoint-md){
+      font-size: 18px;
+      padding: 15px 15px 10px;
+    }
   }
   &__text{
     max-width: 520px;
     @media (max-width: $breakpoint-xl){
       max-width: 400px;
     }
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px;
+    }
   }
   &__btn-wrapper{
     padding: 17px 0 0;
+    @media (max-width: $breakpoint-md){
+      padding: 12px 15px 0;
+    }
     .btn{
       margin-right: 15px;
     }
@@ -45,6 +73,12 @@
   overflow-x: hidden;
   &__row{
     display: flex;
+    // @media (max-width: $breakpoint-xl){
+
+    // }
+    @media (max-width: $breakpoint-md){
+      display: block;
+    }
   }
   &__left{
     flex: 0 0 69%;
@@ -57,6 +91,10 @@
       max-width: 62%;
       padding: 25px 20px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      max-width: 100%;
+      padding: 0 15px;
+    }
   }
   &__right{
     flex: 0 0 31%;
@@ -66,6 +104,9 @@
     @media (max-width: $breakpoint-xl){
       flex: 0 0 38%;
       max-width: 38%;
+    }
+    @media (max-width: $breakpoint-md){
+      max-width: 100%;
     }
   }
 
@@ -78,17 +119,45 @@
     @media (max-width: $breakpoint-xl){
       margin-bottom: 20px;
     }
+    @media (max-width: $breakpoint-md){
+      font-size: 17px;
+      padding: 10px 0 5px;
+      margin-bottom: 0;
+    }
   }
   &__text{
-    .link-more{
+    .btn--link-more{
       display: none;
+      @media (max-width: $breakpoint-md){
+        display: inline-block;
+        font-size: 13px;
+      }
     }
     p{
       margin: 10px 0;
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+      &:first-of-type{
+        @media (max-width: $breakpoint-md){
+          display: block;
+        }
+      }
     }
   }
+  &__btn-wrapper{
+    margin: 20px 0 40px;
+    @media (max-width: $breakpoint-md){
+      display: none;
+      margin: 20px 0;
+    }
+  }
+
   &__bg{
     position: relative;
+    @media (max-width: $breakpoint-md){
+      top: -15px;
+    }
     &:before{
       content: '';
       position: absolute;
@@ -102,6 +171,14 @@
       @media (max-width: $breakpoint-xl){
         transform: translate(375px, -40px) scale(0.85) ;
       }
+      @media (max-width: $breakpoint-md){
+        transform: none;
+        background-image: url(../img/about-img-mobile.png);
+        width: 320px;
+        height: 258px;
+        // right: 50%;
+        // transform: translateX(50%);
+      }
     }
   }
   &__stamp{
@@ -111,15 +188,22 @@
     @media (max-width: $breakpoint-xl){
       margin-top: 285px;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 175px 15px 0;
+      text-align: center;
+    }
   }
   &__text-additional{
     margin: 15px 0;
     font-size: 13px;
     line-height: (20/13);
     max-width: 300px;
-  }
-  &__btn-wrapper{
-    margin: 20px 0 40px;
+    @media (max-width: $breakpoint-md){
+      margin: 5px 0 15px;
+      padding: 0 15px;
+      max-width: 100%;
+    }
   }
 }
 
@@ -127,6 +211,9 @@
 .about-gallery{
   &__row{
     display: flex;
+    @media (max-width: $breakpoint-md){
+      display: block;
+    }
   }
   &__left{
     flex: 0 0 69%;
@@ -137,6 +224,10 @@
       max-width: 62%;
       padding: 0 30px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      max-width: 100%;
+      padding: 10px 15px 20px;
+    }
   }
   &__right{
     flex: 0 0 31%;
@@ -144,6 +235,10 @@
     @media (max-width: $breakpoint-xl){
       flex: 0 0 38%;
       max-width: 38%;
+    }
+    @media (max-width: $breakpoint-md){
+      max-width: 100%;
+      padding: 0 15px;
     }
   }
   &__text-additional{
@@ -154,6 +249,10 @@
     @media (max-width: $breakpoint-xl){
       margin: 10px 0 15px;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 20px 0 0;
+      max-width: 100%;
+    }
   }
   &__img-popup{
     position: relative;
@@ -161,6 +260,9 @@
     border: 3px solid #888c8f;
     border-radius: 2px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+    @media (max-width: $breakpoint-md){
+      margin: 0 auto;
+    }
   }
   &__link{
     position: absolute;
@@ -192,6 +294,15 @@
     line-height: (22/16);
     background-color: #648da1;
     color: $text-white;
+    @media (max-width: $breakpoint-md){
+      font-size: 15px;
+      padding: 8px 15px;
+    }
+    span{
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+    }
   }
 }
 
@@ -200,12 +311,19 @@
   @media (max-width: $breakpoint-xl){
     padding: 10px 0 20px;
   }
+  @media (max-width: $breakpoint-md){
+    padding: 15px 15px 20px;
+  }
 
   &__title{
     margin: 0;
     font-weight: 400;
     font-size: 20px;
     padding: 0 0 20px;
+    @media (max-width: $breakpoint-md){
+      font-size: 17px;
+      padding: 0 0 10px;
+    }
   }
   &__list{
     padding-left: 0;
@@ -215,6 +333,9 @@
     flex-wrap: wrap;
     @media (max-width: $breakpoint-xl){
       margin: 0;
+    }
+    @media (max-width: $breakpoint-md){
+      margin: 0 -5px;
     }
   }
   &__item{
@@ -226,6 +347,11 @@
       flex: 0 0 50%;
       max-width: 50%;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0 0 2px;
+    }
   }
 }
 .advantage{
@@ -235,7 +361,10 @@
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
   min-height: 88px;
   border-radius: 5px;
-  // padding: 15px 20px;
+  @media (max-width: $breakpoint-md){
+    min-height: 72px;
+  }
+
   &:before{
     content: '';
     display: block;
@@ -243,6 +372,9 @@
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: $breakpoint-md){
+      right: 10px;
+    }
   }
   &--one{
     &:before{
@@ -288,6 +420,11 @@
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: $breakpoint-md){
+      left: 15px;
+      max-width: 220px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -296,9 +433,15 @@
   @media (max-width: $breakpoint-xl){
     padding: 0 0 50px;
   }
+  @media (max-width: $breakpoint-xl){
+    padding: 0 0 40px;
+  }
 
   &__row{
     display: flex;
+    @media (max-width: $breakpoint-md){
+      flex-wrap: wrap;
+    }
   }
   &__left{
     flex: 0 0 69%;
@@ -309,6 +452,11 @@
       max-width: 52%;
       padding: 0 20px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 15px;
+    }
   }
   &__right{
     flex: 0 0 31%;
@@ -317,20 +465,32 @@
       flex: 0 0 48%;
       max-width: 48%;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      order: -1;
+      // overflow: hidden;
+    }
   }
   &__title{
     margin: 0;
     font-weight: 400;
     font-size: 20px;
+    @media (max-width: $breakpoint-md){
+      font-size: 17px;
+    }
   }
   &__round-map{
     position: relative;
+    @media (max-width: $breakpoint-md){
+      padding: 285px 0 0;
+    }
     &:before{
       content: '';
+      display: block;
       position: absolute;
       top: -50px;
       right: -60px;
-      // transform: translateX(150px);
       background-image: url(../img/about-map2.png);
       background-repeat: no-repeat;
       width: 406px;
@@ -339,6 +499,21 @@
         top: 0;
         right: -40px;
       }
+      @media (max-width: $breakpoint-md){
+        width: 320px;
+        height: 380px;
+        background-image: url(../img/about-map2-mobile.png);
+        background-position: center center;
+        right: 50%;
+        transform: translateX(50%);
+        top: -60px;
+        z-index: 1;
+      }
+    }
+  }
+  &__text{
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
     }
   }
 }

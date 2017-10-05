@@ -3,6 +3,10 @@
   color: #a1a1a1;
   font-size: 12px;
   line-height: (22/12);
+  @media (max-width: $breakpoint-md){
+    padding: 15px 0 25px;
+  }
+
   a{
     color: #a1a1a1;
   }

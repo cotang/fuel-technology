@@ -40,6 +40,11 @@
       padding: 6px 16px 6px 50px;
       display: block;
     }
+    @media (max-width: $breakpoint-md){
+      padding: 6px 26px 6px 60px;
+      display: inline-block;
+      width: auto;
+    }
 
     &:before{
       content: '';

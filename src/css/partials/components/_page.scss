@@ -3,6 +3,25 @@
     .footer:before{
       display: none;
     }
+    .footer{
+      @media (max-width: $breakpoint-md){
+        padding: 20px 0;
+      }
+    }
+  }
+  &--where-to-buy, &--production{
+    .footer:before{
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
+    }
+  }
+  &--technology{
+    .footer{
+      @media (max-width: $breakpoint-md){
+        padding: 15px 0;
+      }
+    }
   }
 }
 

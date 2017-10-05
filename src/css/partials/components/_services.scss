@@ -9,6 +9,25 @@
     background-position: calc(50% + 70px) center;
     padding: 0 0 150px;
   }
+  @media (max-width: $breakpoint-md){
+    background-color: #141c1b;
+    background-repeat: repeat;
+    background-position: center top;
+    background-image: url(../img/services-bg.jpg);
+    background-size: 100%;
+    padding: 0;
+  }
+
+  .breadcrumbs{
+    @media (max-width: $breakpoint-md){
+      background-color: #111010;
+      background-repeat: no-repeat;
+      background-position: calc(50% + 30px) center;
+      background-image: url(../img/services-promo.jpg);
+      background-size: cover;
+      padding: 15px 15px 100px;
+    }
+  }
 
   &__title{
     margin: -10px 0 0;
@@ -21,12 +40,21 @@
       margin: -5px 0 0;
       padding: 0 0 10px;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 15px 15px 5px;
+      font-size: 18px;
+    }
   }
   &__text{
     max-width: 420px;
     line-height: 1.6;
     @media (max-width: $breakpoint-xl){
       line-height: 1.46;
+    }
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 0;
+      max-width: 100%;
     }
   }
   &__btn-wrapper{
@@ -68,6 +96,9 @@
       padding: 25px 0 10px;
       max-width: 100%;
     }
+    @media (max-width: $breakpoint-md){
+      padding: 20px 0 20px;
+    }
   }
 }
 .service{
@@ -78,22 +109,35 @@
   @media (max-width: $breakpoint-xl){
     margin: 0 0 20px;
   }
+  @media (max-width: $breakpoint-md){
+    margin: 0 0 5px;
+  }
 
   &__title{
     background-image: linear-gradient( 90deg, rgb(56,56,69) 0%, rgb(56,56,69) 0%, rgb(59,80,99) 1%, rgb(61,103,129) 11%, rgb(52,52,65) 100%);
     opacity: 0.8;
     margin: 0;
     padding: 10px 25px;
+    @media (max-width: $breakpoint-md){
+      padding: 5px 15px;
+      font-weight: 400;
+    }
   }
   &__text-wrapper{
     padding: 10px 120px 30px 25px;
     position: relative;
     @media (max-width: $breakpoint-xl){
-      padding: 10px 150px 30px 25px
+      padding: 10px 150px 30px 25px;
+    }
+    @media (max-width: $breakpoint-md){
+      padding: 15px 15px 30px 15px;
     }
   }
   &__text{
     line-height: (26/15);
+    @media (max-width: $breakpoint-md){
+      line-height: 1.46;
+    }
   }
   &__img{
     position: absolute;
@@ -102,6 +146,13 @@
     width: 140px;
     height: 140px;
     text-align: center;
+    @media (max-width: $breakpoint-md){
+      width: 60px;
+      height: 60px;
+      bottom: 10px;
+      right: 10px;
+    }
+
     img{
       width: 100%;
       height: 100%;
@@ -111,6 +162,9 @@
   }
   &__btn-wrapper{
     margin: 20px 0 0;
+    @media (max-width: $breakpoint-md){
+      margin: 10px 0 0;
+    }
   }
 }
 

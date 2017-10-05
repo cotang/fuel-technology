@@ -8,17 +8,20 @@ include ../abstracts/bemto/bemto.pug
         +e.address
           // Address
           +b.address
-            span СПб, пр. Александровской фермы, д.29, литер Е.
-            a(href="page-contacts.html") Смотреть на карте
+            +e.text СПб, пр. Александровской фермы, д.29, литер Е.
+            a(href="page-contacts.html", title="Переход на страницу контактов")
+              span Смотреть на карте
         +e.logo
           // Logo
           +b.A.logo(href="index.html" title="Техника топлива")
-            img(src="img/logo.png" alt="Техника топлива")
+            +e.IMG.img(src="img/logo.png" alt="Техника топлива")
+            +e.IMG.img-mobile(src="img/logo-mobile.png" alt="Техника топлива")
         +e.call
           // Call
           +b.call
-            span Бесплатный звонок по России
-            a(href="tel:+78007770010") 8 800 777 00 10
+            +e.free Бесплатный звонок по России
+            a(href="tel:+78007770010", title="Телефон для связи")
+              span 8 800 777 00 10
 
   +e.nav
     .container

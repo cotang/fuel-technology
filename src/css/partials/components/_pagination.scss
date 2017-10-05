@@ -9,6 +9,9 @@
     line-height: 1.4;
     padding-top: 5px;
   }
+  @media (max-width: $breakpoint-md){
+    padding: 5px 15px 0;
+  }
 
   &__inner{
     display: inline-flex;
@@ -23,6 +26,10 @@
     padding: 5px 5px 5px 15px;
     position: relative;
     color: #666666;
+    @media (max-width: $breakpoint-md){
+      display: none;
+    }
+
     &:after{
       content: '';
       display: inline-block;
@@ -40,6 +47,9 @@
   &__list{
     margin: 0;
     padding: 0 10px 0 20px;
+    @media (max-width: $breakpoint-md){
+      padding: 0;
+    }
   }
 
   &__item{

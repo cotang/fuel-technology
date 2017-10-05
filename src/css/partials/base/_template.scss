@@ -67,21 +67,8 @@ div{
     max-width: $screen-md;
   }
   @media (max-width: $breakpoint-md){
-    // max-width: 100%;
-    // padding-left: 0;
-    // padding-right: 0;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-
-// .row{
-//   @media (max-width: $breakpoint-md){
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-// }
-// .col-xs-12{
-//   @media (max-width: $breakpoint-md){
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-// }
