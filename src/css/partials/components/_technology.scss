@@ -3,31 +3,18 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(../img/technology-promo.jpg);
-  background-size: cover;
   padding: 0 0 60px;
   @media (max-width: $breakpoint-xl){
     background-position: calc(50% - 110px) center;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center -1000px;
-    background-image: url(../img/bg-spot.jpg);
-    // background-size: 100%;
-    padding: 0;
+    background-position: calc(50% - 35px) center;
+    padding: 0 0 75px;
+    background-size: cover;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #111010;
-      background-repeat: no-repeat;
-      background-position: calc(50% - 35px) center;
-      background-image: url(../img/technology-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 100px;
-    }
-  }
-
+.technology-promo-info{
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
@@ -68,8 +55,11 @@
 .technology{
   background-color: #141c1b;
   background-repeat: repeat;
-  background-position: center -1000px;
-  background-image: url(../img/bg-spot.jpg);
+  background-position: center -250px;
+  background-image: url(../img/technology-bg.jpg);
+  @media (max-width: $breakpoint-md){
+    background-size: 200% auto;
+  }
 }
 
 

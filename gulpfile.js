@@ -131,8 +131,10 @@ gulp.task('sass', function () {
 gulp.task('js', function() {
   return gulp.src(path.src.js)
     .pipe(plumber({ errorHandler: onError }))
-    .pipe(concat('script.min.js'))
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest(path.build.js))
     .pipe(uglify())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
 });

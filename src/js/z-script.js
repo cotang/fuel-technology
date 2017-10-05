@@ -1,8 +1,14 @@
 jQuery(document).ready(function($){
 
+  /* Sticky footer */
+  if ($(window).height() >= $('body').height() ){
+    // $('.page').addClass('fixed');
+    $('.page > *').addClass('fixed');
+    $('.footer').addClass('footer--fixed');
+  }
+
 
   function initSlider() {
-    // галерея "отзывы"
     $('.gallery__list').slick({
       infinite: true,
       dots: false,
@@ -13,16 +19,6 @@ jQuery(document).ready(function($){
       centerPadding: '0'
     });
   }
-
-
-  /* Sticky footer */
-  // if ( $(window).width() >= 980 ){
-    if ($(window).height() >= $('body').height() ){
-      $('.page > *').addClass('fixed');
-      $('.footer').addClass('footer--fixed');
-    }
-  // }
-
 
   /* Gallery in modal window */
   $('.about-gallery__link').click( function(e){
@@ -58,6 +54,21 @@ jQuery(document).ready(function($){
       $(this).closest('.about-common__text').find('.about-common__btn-wrapper').show();
       $(this).hide();
     });
+
+    var removingBlocks = [
+      $('.articles-promo-info'),
+      $('.about-promo-info'),
+      $('.technology-promo-info'),
+      $('.services-promo-info'),
+      $('.quality-promo-info'),
+      $('.production-promo-info'),
+      $('.news-promo-info'),
+      $('.single-service-promo-info'),
+    ]
+    $(removingBlocks).each(function(){
+      $(this).prependTo($(this).closest('.promo').next());
+    });
+
   }
 
 

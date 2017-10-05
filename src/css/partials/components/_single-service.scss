@@ -10,26 +10,12 @@
     padding: 0 0 125px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center top;
-    background-image: url(../img/service-single-bg-vert.jpg);
-    background-size: 100%;
-    padding: 0;
+    background-position: center center;
+    padding: 0 0 65px;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #111010;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/service-single-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 100px;
-    }
-  }
-
-
+.single-service-promo-info{
   &__title{
     margin: -10px 0 0;
     font-size: 26px;

@@ -9,24 +9,11 @@
     padding: 0 0 95px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #475567;
-    background-repeat: repeat;
-    background-position: center top;
-    background-image: url(../img/about-bg.jpg);
-    background-size: 100%;
-    padding: 0 0 20px;
+    padding: 0 0 75px;
   }
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #475567;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/about-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 100px;
-    }
-  }
+}
 
+.about-promo-info{
   &__title{
     margin: 0;
     font-size: 26px;
@@ -67,15 +54,13 @@
   background-repeat: repeat;
   background-position: center top;
   background-image: url(../img/about-bg.jpg);
+  background-size: 100% auto;
 }
 
 .about-common{
   overflow-x: hidden;
   &__row{
     display: flex;
-    // @media (max-width: $breakpoint-xl){
-
-    // }
     @media (max-width: $breakpoint-md){
       display: block;
     }

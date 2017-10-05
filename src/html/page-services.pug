@@ -5,17 +5,20 @@ block content
   +b.SECTION.page--services
 
     // Services promo
-    +b.SECTION.services-promo
-      .container
+    +b.SECTION.services-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span Услуги компании
 
-        +e.H1.title Услуги компании
-        +e.text Компания «Техника Топлива» представляет услуги для компаний энергетического комплекса: АЗС и ТРК. Индивидуальная комплектация заказов для поставок на предприятия и АЗС.
+      // Services promo info
+      +b.SECTION.services-promo-info
+        .container
+          +e.H1.title Услуги компании
+          +e.text Компания «Техника Топлива» представляет услуги для компаний энергетического комплекса: АЗС и ТРК. Индивидуальная комплектация заказов для поставок на предприятия и АЗС.
 
     // Services
     +b.SECTION.services

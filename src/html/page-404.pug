@@ -6,13 +6,15 @@ block content
 
     // Not found
     +b.SECTION.not-found
-      .container
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span Страница не найдена
+
+      .container
         +e.flex
           +e.img
             img(src="img/404.png", alt="")

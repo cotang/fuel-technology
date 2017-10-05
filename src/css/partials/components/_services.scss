@@ -10,25 +10,13 @@
     padding: 0 0 150px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center top;
-    background-image: url(../img/services-bg.jpg);
-    background-size: 100%;
-    padding: 0;
+    background-position: calc(50% + 30px) center;
+    padding: 0 0 75px;
+    background-size: cover;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #111010;
-      background-repeat: no-repeat;
-      background-position: calc(50% + 30px) center;
-      background-image: url(../img/services-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 100px;
-    }
-  }
-
+.services-promo-info{
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
@@ -69,6 +57,7 @@
   background-image: url(../img/services-bg.jpg);
   overflow: hidden;
   position: relative;
+
   &:before{
     content: '';
     position: absolute;
@@ -84,6 +73,10 @@
       width: 768px;
       opacity: 0.5;
       background-size: contain;
+    }
+    @media (max-width: $breakpoint-md){
+      top: 180px;
+      width: 100%;
     }
   }
 

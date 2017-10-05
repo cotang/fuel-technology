@@ -9,27 +9,14 @@
     padding: 0 0 110px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center -1000px;
-    background-image: url(../img/bg-spot.jpg);
-    background-size: 100%;
-    padding: 0;
+    padding: 0 0 65px;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #1c2323;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/where-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 90px;
-    }
+.where-to-buy-promo-info{
+  @media (max-width: $breakpoint-md){
+    display: none;
   }
-
-
-
   &__title{
     max-width: 380px;
     margin: 0;
@@ -42,18 +29,12 @@
       margin: -5px 0 0;
       max-width: 300px;
     }
-    @media (max-width: $breakpoint-md){
-      display: none;
-    }
   }
   &__text{
     max-width: 380px;
     line-height: 1.6;
     @media (max-width: $breakpoint-xl){
       max-width: 350px;
-    }
-    @media (max-width: $breakpoint-md){
-      display: none;
     }
   }
 }
@@ -63,6 +44,10 @@
   background-repeat: repeat;
   background-position: center -1000px;
   background-image: url(../img/bg-spot.jpg);
+  @media (max-width: $breakpoint-md){
+    background-position: center 400px;
+    background-size: 200% auto;
+  }
 
   &__column{
     position: relative;

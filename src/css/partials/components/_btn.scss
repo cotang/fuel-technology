@@ -53,6 +53,10 @@
       top: 0;
       left: 0;
     }
+    &:hover, &:focus, &:active{
+      background-image: linear-gradient( to bottom, rgb(197,198,200) 0%, rgb(122,126,130) 100%);
+    }
+
   }
 }
 

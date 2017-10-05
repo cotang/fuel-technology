@@ -8,19 +8,22 @@ block content
     +b.ARTICLE.single-service
 
       // Single service promo
-      +b.SECTION.single-service-promo
-        .container
+      +b.SECTION.single-service-promo.promo
 
-          // Breadcrumbs
-          +b.breadcrumbs
+        // Breadcrumbs
+        +b.breadcrumbs
+          .container
             a(href="index.html") Главная
             =' /'
             a(href="page-services.html") Услуги компании
             =' /'
             span Ремонт отрывных муфт
 
-          +e.H1.title Ремонт отрывных муфт
-          +e.text Компания «Техника Топлива» представляет услуги по комплексному ремонту отрывных муфт для пистолетов автозаправочных станций и топливно-раздаточных комплексов российских и западных производителей.
+        // Single service promo info
+        +b.SECTION.single-service-promo-info
+          .container
+            +e.H1.title Ремонт отрывных муфт
+            +e.text Компания «Техника Топлива» представляет услуги по комплексному ремонту отрывных муфт для пистолетов автозаправочных станций и топливно-раздаточных комплексов российских и западных производителей.
 
       +e.inner
         .container

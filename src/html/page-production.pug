@@ -5,17 +5,20 @@ block content
   +b.SECTION.page--production
 
     // Production promo
-    +b.SECTION.production-promo
-      .container
+    +b.SECTION.production-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span Готовая продукция «Техника Топлива»
 
-        +e.H1.title Готовая продукция «Техника Топлива»
-        +e.text Компания «Техника Топлива» представляет ассортимент продукции: комплектующие для АЗС и ТРК с техническими описаниями по применению, назначению и размерами для монтажа на объектах (предприятиях).
+      // Production promo info
+      +b.SECTION.production-promo-info
+        .container
+          +e.H1.title Готовая продукция «Техника Топлива»
+          +e.text Компания «Техника Топлива» представляет ассортимент продукции: комплектующие для АЗС и ТРК с техническими описаниями по применению, назначению и размерами для монтажа на объектах (предприятиях).
 
     // Production components
     +b.SECTION.production-components

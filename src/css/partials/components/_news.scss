@@ -10,25 +10,13 @@
     padding: 0 0 120px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center -1000px;
-    background-image: url(../img/bg-spot.jpg);
-    background-size: 100%;
-    padding: 0;
+    background-position: center center;
+    background-size: cover;
+    padding: 0 0 90px;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #111010;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/news-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 115px;
-    }
-  }
-
+.news-promo-info{
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
@@ -42,7 +30,7 @@
     }
     @media (max-width: $breakpoint-md){
       margin: 0;
-      padding: 10px 15px 0;
+      padding: 10px 15px 5px;
       font-size: 18px;
     }
   }
@@ -56,6 +44,8 @@
     @media (max-width: $breakpoint-md){
       padding: 0 15px 0;
       max-width: 100%;
+      font-size: 13px;
+      line-height: (18/13);
     }
   }
 }
@@ -65,6 +55,11 @@
   background-repeat: repeat;
   background-position: center -1000px;
   background-image: url(../img/bg-spot.jpg);
+  @media (max-width: $breakpoint-md){
+    background-position: center 400px;
+    background-size: 200% auto;
+  }
+
   &__column{
     padding: 0 0 70px;
     position: relative;

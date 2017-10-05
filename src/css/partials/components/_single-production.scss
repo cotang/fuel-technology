@@ -7,6 +7,10 @@
   @media (max-width: $breakpoint-xl){
     background-position: center top;
   }
+  @media (max-width: $breakpoint-md){
+    background-position: center 400px;
+    background-size: 200% auto;
+  }
 
   .breadcrumbs{
     @media (max-width: $breakpoint-md){

@@ -5,19 +5,22 @@ block content
   +b.SECTION.page--news
 
     // News promo
-    +b.SECTION.news-promo
-      .container
+    +b.SECTION.news-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           a(href="page-about.html") О компании
           =' /'
           span Новости компании
 
-        +e.H1.title Новости компании
-        +e.text Компания «Техника Топлива» представляет новости рынка комплектующих для АЗС и ТРК: новые стандарты качества продукции, европейские нормы и примеры эффективности применения комплектующих для АЗС на практике.
+      // News promo info
+      +b.SECTION.news-promo-info
+        .container
+          +e.H1.title Новости компании
+          +e.text Компания «Техника Топлива» представляет новости рынка комплектующих для АЗС и ТРК: новые стандарты качества продукции, европейские нормы и примеры эффективности применения комплектующих для АЗС на практике.
 
     // Articles
     +b.SECTION.news

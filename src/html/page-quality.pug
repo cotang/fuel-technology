@@ -5,19 +5,22 @@ block content
   +b.SECTION.page--quality
 
     // Quality promo
-    +b.SECTION.quality-promo
-      .container
+    +b.SECTION.quality-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           a(href="page-production.html") Продукция
           =' /'
           span Контроль качества продукции
 
-        +e.H1.title Контроль качества продукции
-        +e.text Изготовляемая продукция компании «Техника Топлива» проходит ежегодную сертификацию по контролю качества в соответствии с российскими и европейскими нормами для комплектующих АЗС и ТРК.
+      // Quality promo info
+      +b.SECTION.quality-promo-info
+        .container
+          +e.H1.title Контроль качества продукции
+          +e.text Изготовляемая продукция компании «Техника Топлива» проходит ежегодную сертификацию по контролю качества в соответствии с российскими и европейскими нормами для комплектующих АЗС и ТРК.
 
     // Quality certificates
     +b.SECTION.quality-certificates

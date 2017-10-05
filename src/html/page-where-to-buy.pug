@@ -5,17 +5,20 @@ block content
   +b.SECTION.page--where-to-buy
 
     // Where-to-buy promo
-    +b.SECTION.where-to-buy-promo
-      .container
+    +b.SECTION.where-to-buy-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span Где купить комплектующие «Техника Топлива» для АЗС
 
-        +e.H1.title Где купить комплектующие «Техника Топлива» для АЗС
-        +e.text Компания «Техника Топлива» представляет карточки компаний: наших дилеров на рынке комплектующих для АЗС и ТРК, аффилированных на территории Российской Федерации.
+      // Where-to-buy promo info
+      +b.SECTION.where-to-buy-promo-info
+        .container
+          +e.H1.title Где купить комплектующие «Техника Топлива» для АЗС
+          +e.text Компания «Техника Топлива» представляет карточки компаний: наших дилеров на рынке комплектующих для АЗС и ТРК, аффилированных на территории Российской Федерации.
 
     // Dealers
     +b.SECTION.dealers

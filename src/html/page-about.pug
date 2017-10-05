@@ -5,20 +5,23 @@ block content
   +b.SECTION.page--about
 
     // About promo
-    +b.SECTION.about-promo
-      .container
+    +b.SECTION.about-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span О компании «Техника Топлива»
 
-        +e.H1.title О компании «Техника Топлива»
-        +e.text Основная информация о деятельности компании «Техника Топлива»: общие положения, презентация компании, конкурентные преимущества, геолокация производства компании и многое другое.
-        +e.btn-wrapper
-          +b.A.btn--light-grey(href="#") Узнать больше
-          +b.A.btn--light-grey(href="#") Где купить
+      // About promo info
+      +b.SECTION.about-promo-info
+        .container
+          +e.H1.title О компании «Техника Топлива»
+          +e.text Основная информация о деятельности компании «Техника Топлива»: общие положения, презентация компании, конкурентные преимущества, геолокация производства компании и многое другое.
+          +e.btn-wrapper
+            +b.A.btn--light-grey(href="#") Узнать больше
+            +b.A.btn--light-grey(href="#") Где купить
 
     // About
     +b.SECTION.about

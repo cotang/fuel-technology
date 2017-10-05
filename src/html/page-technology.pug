@@ -5,19 +5,22 @@ block content
   +b.SECTION.page--technology
 
     // Technology promo
-    +b.SECTION.technology-promo
-      .container
+    +b.SECTION.technology-promo.promo
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           span Технологии производства
 
-        +e.H1.title Технологии производства
-        +e.text Компания «Техника Топлива» представляет технологии производства комплектующих для АЗС и ТРК на российском оборудовании, прошедшем сертификацию РосТест, что гарантирует высокое качество, износостойкость и соответствие стандартам.
-        +e.btn-wrapper
-          +b.A.btn(href="#") Узнать больше
+      // Technology promo info
+      +b.SECTION.technology-promo-info
+        .container
+          +e.H1.title Технологии производства
+          +e.text Компания «Техника Топлива» представляет технологии производства комплектующих для АЗС и ТРК на российском оборудовании, прошедшем сертификацию РосТест, что гарантирует высокое качество, износостойкость и соответствие стандартам.
+          +e.btn-wrapper
+            +b.A.btn(href="#") Узнать больше
 
     // Technology
     +b.SECTION.technology

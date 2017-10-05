@@ -6,19 +6,19 @@ block content
 
     // Single production
     +b.SECTION.single-production
-      .container
 
-        // Breadcrumbs
-        +b.breadcrumbs
+      // Breadcrumbs
+      +b.breadcrumbs
+        .container
           a(href="index.html") Главная
           =' /'
           a(href="page-production.html") Продукция
           =' /'
           span Отрывная поворотно-осевая муфта ОМ 16.0 (папа-папа)
 
+      .container
         +e.H1.title Отрывная поворотно-осевая муфта ОМ 16.0 (папа-папа)
         +e.row
-
           +e.production-right
             +b.models
               +e.H3.title
@@ -28,7 +28,6 @@ block content
                   a(href="#") Отрывная поворотно-осевая муфта ОМ 16.0 (папа-папа)
                 +e.item
                   a(href="#") Отрывная поворотно-осевая муфта ОМ 16.1 (папа-мама)
-
           +e.production-left
             +b.SECTION.production-item
               +e.row
@@ -51,7 +50,6 @@ block content
                   span 2000 руб./ед.
                 //- +e.order Заказ от 10 шт.
                 +b.A.btn--grey(href="#") Заказать муфты
-
 
             +b.ARTICLE.production-item-text
               +e.use

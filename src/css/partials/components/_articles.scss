@@ -10,26 +10,12 @@
     padding: 0 0 100px;
   }
   @media (max-width: $breakpoint-md){
-    background-color: #141c1b;
-    background-repeat: repeat;
-    background-position: center top;
-    background-image: url(../img/articles-bg.jpg);
-    // background-size: 100%;
-    padding: 0;
+    padding: 0 0 75px;
+    background-position: calc(50% - 20px) center;
   }
+}
 
-  .breadcrumbs{
-    @media (max-width: $breakpoint-md){
-      background-color: #111010;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url(../img/articles-promo.jpg);
-      background-size: cover;
-      padding: 15px 15px 100px;
-    }
-  }
-
-
+.articles-promo-info{
   &__title{
     margin: -10px 0 0;
     font-size: 26px;
@@ -59,16 +45,14 @@
       max-width: 100%;
     }
   }
-  &__btn-wrapper{
-    margin-top: 20px;
-  }
 }
 
 .articles{
   background-color: #141c1b;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center top;
   background-image: url(../img/articles-bg.jpg);
+
   &__list{
     padding: 40px 0 135px;
     max-width: 670px;
