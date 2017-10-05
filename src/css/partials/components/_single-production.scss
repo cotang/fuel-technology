@@ -8,6 +8,13 @@
     background-position: center top;
   }
 
+  .breadcrumbs{
+    @media (max-width: $breakpoint-md){
+      padding: 15px 15px 0;
+    }
+  }
+
+
   &__title{
     margin: -15px 0 0;
     font-size: 26px;
@@ -17,6 +24,11 @@
       font-weight: 400;
       font-size: 22px;
       padding: 0 0 20px;
+    }
+    @media (max-width: $breakpoint-md){
+      margin: 0;
+      padding: 5px 15px 15px;
+      font-size: 17px;
     }
   }
   &__row{
@@ -67,6 +79,10 @@
       color: #333333;
       text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
     }
+    @media (max-width: $breakpoint-md){
+      padding: 8px 15px;
+    }
+
     span{
       &:before{
         content: '';
@@ -109,6 +125,10 @@
   &__row{
     display: flex;
     border-bottom: 1px solid #adadad;
+    @media (max-width: $breakpoint-md){
+      display: block;
+      position: relative;
+    }
   }
   &__img{
     flex: 0 0 50%;
@@ -116,6 +136,19 @@
     @media (max-width: $breakpoint-xl){
       flex: 0 0 335px;
       max-width: 335px;
+    }
+    @media (max-width: $breakpoint-md){
+      height: 110px;
+      width: 160px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
     }
   }
   &__text-wrapper{
@@ -127,6 +160,16 @@
       padding: 15px 20px;
       flex: 1 1 auto;
       max-width: 100%;
+    }
+    @media (max-width: $breakpoint-md){
+      padding: 0;
+    }
+  }
+  &__info-wrapper{
+    @media (max-width: $breakpoint-md){
+      margin-left: 160px;
+      min-height: 110px;
+      padding: 10px 15px;
     }
   }
   &__article{
@@ -151,11 +194,20 @@
     }
   }
   &__text{
+    @media (max-width: $breakpoint-md){
+      padding: 5px 10px;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
     span:first-of-type{
       display: block;
       font-size: 12px;
       line-height: (22/12);
       margin-bottom: 10px;
+      @media (max-width: $breakpoint-md){
+        display: none;
+      }
     }
     span:last-of-type{
       font-size: 14px;
@@ -171,16 +223,22 @@
     @media (max-width: $breakpoint-xl){
       justify-content: flex-start;
     }
+    @media (max-width: $breakpoint-md){
+      justify-content: space-around;
+    }
+
     .btn{
       padding: 6px 20px;
       border: 1px solid #747474;
       background-image: linear-gradient( 180deg, rgb(232,232,232) 0%, rgb(132,135,138) 100%);
+      @media (max-width: $breakpoint-md){
+        padding: 5px 10px;
+      }
     }
   }
   &__price{
     flex: 0 0 50%;
     max-width: 50%;
-    // padding: 10px 0;
     text-align: center;
     font-size: 14px;
     line-height: (22/14);
@@ -199,12 +257,21 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media (max-width: $breakpoint-md){
+    padding: 10px 0 0;
+  }
+
   &__title{
     font-weight: 400;
     border-bottom: 1px solid #3b3f43;
     @media (max-width: $breakpoint-xl){
       font-size: 17px;
       color: #cccccc;
+    }
+    @media (max-width: $breakpoint-md){
+      font-size: 14px;
+      padding: 0 0 5px;
+      margin: 10px 0 15px;
     }
   }
   &__use{
@@ -214,6 +281,11 @@
       max-width: 50%;
       padding: 10px 25px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 15px 0;
+    }
   }
   &__make{
     padding: 15px 0;
@@ -222,25 +294,45 @@
       max-width: 50%;
       padding: 10px 0 0;
     }
+    @media (max-width: $breakpoint-md){
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 15px 0;
+    }
   }
   &__text-wrapper{
-
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 0;
+    }
   }
   &__features{
     padding: 15px 0;
+    @media (max-width: $breakpoint-md){
+      padding: 0 15px 0;
+    }
   }
   &__text{
-
+    @media (max-width: $breakpoint-md){
+      font-size: 13px;
+      line-height: (18/13);
+    }
   }
   &__btn-wrapper{
     margin: 15px 0 110px;
     @media (max-width: $breakpoint-xl){
       margin: 15px 0 50px;
     }
+    @media (max-width: $breakpoint-md){
+      margin: 20px 15px 35px;
+    }
+
     .btn{
       border: 1px solid #333333;
       color: #999999;
       padding: 5px 20px;
+      @media (max-width: $breakpoint-md){
+        padding: 5px 15px;
+      }
     }
   }
   ul, ol{
