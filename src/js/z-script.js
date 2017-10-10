@@ -21,9 +21,12 @@ jQuery(document).ready(function($){
   }
 
   /* Gallery in modal window */
-  $('.about-gallery__link').click( function(e){
+  $('.about-gallery__img-popup, .certificate__title a, .certificate__img, .certificate__link').click( function(e){
     e.preventDefault();
     $('body').css({'overflow':'hidden'});
+    // $('.overlay').show(function(){
+    //   initSlider();
+    // });
     $('.overlay').show();
     initSlider();
   });

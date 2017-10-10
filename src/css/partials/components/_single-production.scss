@@ -71,9 +71,9 @@
   &__title{
     margin: 0;
     color: #cccccc;
-    font-size: 13px;
+    font-size: 12px;
     line-height: (22/13);
-    padding: 10px 15px;
+    padding: 10px 10px 10px 15px;
     border-bottom: 1px solid #454548;
     @media (max-width: $breakpoint-xl){
       border-bottom: none;
@@ -91,7 +91,7 @@
       &:before{
         content: '';
         display: inline-block;
-        vertical-align: text-bottom;
+        // vertical-align: text-bottom;
         margin-right: 10px;
         @include sprite($s-models-burger);
       }
@@ -232,11 +232,18 @@
     }
 
     .btn{
+      transition: none;
       padding: 6px 20px;
       border: 1px solid #747474;
       background-image: linear-gradient( 180deg, rgb(232,232,232) 0%, rgb(132,135,138) 100%);
       @media (max-width: $breakpoint-md){
         padding: 5px 10px;
+      }
+      &:hover, &:focus{
+        // border-color: #fff;
+        background-image: none;
+        background-color: #316e91;
+        color: #fff;
       }
     }
   }
@@ -320,6 +327,9 @@
       font-size: 13px;
       line-height: (18/13);
     }
+    a{
+      color: #ffb040;
+    }
   }
   &__btn-wrapper{
     margin: 15px 0 110px;
@@ -337,10 +347,16 @@
       @media (max-width: $breakpoint-md){
         padding: 5px 15px;
       }
+      &:hover, &:focus, &:active{
+        background-color: rgb(55, 108, 140);
+      }
     }
   }
   ul, ol{
     padding-left: 20px;
+    li{
+      margin-bottom: 10px;
+    }
   }
 }
 

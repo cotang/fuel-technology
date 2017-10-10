@@ -302,6 +302,9 @@
     }
     a{
       color: #333;
+      &:hover, &:focus{
+        color: #3399cc;
+      }
     }
   }
   &__site{
@@ -318,6 +321,9 @@
     a{
       font-weight: 700;
       color: #3e708e;
+      &:hover, &:focus{
+        color: #3399cc;
+      }
     }
   }
 }

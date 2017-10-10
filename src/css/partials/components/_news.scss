@@ -5,6 +5,7 @@
   background-image: url(../img/news-promo.jpg);
   background-size: cover;
   padding: 0 0 115px;
+  opacity: 0.8;
   @media (max-width: $breakpoint-xl){
     background-position: calc(50% + 70px) center;
     padding: 0 0 120px;

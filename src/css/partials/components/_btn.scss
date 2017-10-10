@@ -21,13 +21,15 @@
   &--grey{
     background-color: transparent;
     background-image: linear-gradient( to bottom, rgb(197,198,200) 0%, rgb(122,126,130) 100%);
-    color: $text-black;
+    color: $text-black !important;
     text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
     font-weight: 700;
     border: none;
     &:hover, &:focus, &:active{
       background-image: none;
       background-color: #316e91;
+      color: #eee !important;
+      text-shadow: none;
     }
   }
   &--download{

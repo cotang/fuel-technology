@@ -80,7 +80,7 @@ var path = {
     html: 'src/html/**/*.pug',
     js: 'src/js/**/*.js',
     css: 'src/css/**/*.scss',
-    img: 'src/img/*.*',
+    img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
     php: 'src/**/*.php',
     pngSprites: 'src/img/png-sprite/*.png',

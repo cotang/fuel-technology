@@ -30,7 +30,7 @@ block content
               |  на карте России
             +e.frame
               img(src="img/where-map.jpg", alt="map")
-              +e.A.loupe(href="#") Увеличить карту
+              +e.A.loupe(href="#", style="display:none;") Увеличить карту
 
           +b.dealers-catalog
             +e.H2.title Список дилеров комплектующих
@@ -38,7 +38,7 @@ block content
             +e.UL.list
               +e.item
                 +b.ARTICLE.dealer
-                  +e.img
+                  +e.A.img(href="http://www.sitename.ru/")
                     img(src="img/where-logo1.png", alt="dealer")
                   +e.text-wrapper
                     +e.H3.title ООО «Центр Продаж Комплектующих»
@@ -54,7 +54,7 @@ block content
                       +e.tel
                         span Телефон:
                         span
-                          a(href="tel:+78128008080") +7 (812)
+                          a(href="tel:+78128008080", rel="nofollow") +7 (812)
                             b XXX-XX-XX
                       +e.site
                         span Веб-сайт:
@@ -62,7 +62,7 @@ block content
                           a(href="http://www.sitename.ru") www.sitename.ru
               +e.item
                 +b.ARTICLE.dealer
-                  +e.img
+                  +e.A.img(href="http://tech-equip.ru/")
                     img(src="img/where-logo2.png", alt="dealer")
                   +e.text-wrapper
                     +e.H3.title ООО «ТехОборудование»
@@ -78,7 +78,7 @@ block content
                       +e.tel
                         span Телефон:
                         span
-                          a(href="tel:+74952150202") +7 (495)
+                          a(href="tel:+74952150202", rel="nofollow") +7 (495)
                             b 215-02-02
                       +e.site
                         span Веб-сайт:

@@ -115,6 +115,11 @@
       padding: 5px 15px;
       font-weight: 400;
     }
+    a{
+      &:hover, &:focus{
+        color: #afafaf;
+      }
+    }
   }
   &__text-wrapper{
     padding: 10px 120px 30px 25px;

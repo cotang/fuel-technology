@@ -38,13 +38,15 @@ block content
                 p Ключевая цель Компании — изготовление оборудования и комплектующих для АЗС на территории России, по качеству не уступающих западным аналогам.
                 p Для достижения этой цели в нашей Компании используются только самые современные технологии производства и только высококачественные материалы. На всех этапах производственной цепочки внедрен жесткий контроль качества.
                 p В основу продукции лег большой накопленный опыт эксплуатации зарубежных аналогов на территории России с учетом климатических и эксплуатационных особенностей. Все это позволило добиться высокого качества продукции.
-                p Все изделия нашей Компании всегда есть в наличие на складе, что позволяет в кратчайшие сроки доставить их покупателю.
+                p Все изделия
+                  a(href="#") нашей Компании
+                  |  всегда есть в наличие на складе, что позволяет в кратчайшие сроки доставить их покупателю.
                 p Компания открыта для сотрудничества с региональными представителями, для которых мы готовы предложить выгодные ценовые предложения и гибкую систему оплаты.
-                +e.btn-wrapper
-                  +b.A.btn--grey(href="#") Открыть таблицу анализа
+              +e.btn-wrapper
+                +b.A.btn--grey(href="#") Открыть таблицу анализа
             +e.right
               +e.bg
-              +e.stamp
+              +e.A.stamp(href="#", title="Переход куда-то")
                 img(src="img/about-stamp.png", alt="Техника топлива")
               +e.text-additional Производственные мощности Компании «Техника Топлива» включают в себя высокоточные токарно-фрезерные станки с ЧПУ, термопластавтоматы.
 
@@ -62,9 +64,9 @@ block content
                 //-   img.resp(src='assets/images/d/s_home-8d7a166d.jpg', width='1920', height='988', alt='')
                 img(src="img/video1.jpg", alt="video", width="550", height="310")
             +e.right
-              +e.img-popup
-                +e.A.link(href="#") Увеличить
-                img(src="img/video2.jpg", alt="Техника топлива")
+              +e.A.img-popup(href="#")
+                +e.SPAN.link Увеличить
+                img(src="img/gallery/photo-1.jpg", alt="Техника топлива")
               +e.text-additional Новейшее оборудование с компьютерным управлением позволяет осуществлять качественное производство комплектующих для АЗС и ТРК с торговой маркой «Техника Топлива».
 
       // Advantages
@@ -101,7 +103,9 @@ block content
               +e.H2.title Производство «Техника Топлива» в Санкт-Петербурге
               +e.text
                 p Российская компания «Техника Топлива» основана в 2017 году после долгой работы над прототипом отечественных комплектующих для автозаправочных комплексов и топливо-раздаточных станций.
-                p Специализация компании: производство комплектующих для АЗС и ТРК с высокими показателями износостойкости при эксплуатации.
+                p Специализация компании:
+                  a(href="#") производство комплектующих
+                  |  для АЗС и ТРК с высокими показателями износостойкости при эксплуатации.
                 p It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
               +e.btn-wrapper
                 +b.A.btn--grey(href="#") Узнать больше о производстве
@@ -118,20 +122,34 @@ block content
         +e.inner
           +e.close(href="/")
           // Gallery
-          +b.SECTION.gallery
+          +b.SECTION.gallery--photos
             +e.H2.title Фотогалерея
               span компании
               |  «Техника Топлива»
             +e.UL.list
               +e.item
                 +e.slide
-                  img(src="img/video2.jpg", alt="")
+                  img(src="img/gallery/photo-1.jpg", alt="")
                   +e.text Фото №1. Техника для производства комплектующих для АЗС
               +e.item
                 +e.slide
-                  img(src="img/video2.jpg", alt="")
+                  img(src="img/gallery/photo-2.jpg", alt="")
                   +e.text Фото №1. Техника для производства комплектующих для АЗС
               +e.item
                 +e.slide
-                  img(src="img/video2.jpg", alt="")
+                  img(src="img/gallery/photo-3.jpg", alt="")
                   +e.text Фото №1. Техника для производства комплектующих для АЗС
+              +e.item
+                +e.slide
+                  img(src="img/gallery/photo-4.jpg", alt="")
+                  +e.text Фото №1. Техника для производства комплектующих для АЗС
+              +e.item
+                +e.slide
+                  img(src="img/gallery/photo-5.jpg", alt="")
+                  +e.text Фото №1. Техника для производства комплектующих для АЗС
+              +e.item
+                +e.slide
+                  img(src="img/gallery/photo-6.jpg", alt="")
+                  +e.text Фото №1. Техника для производства комплектующих для АЗС
+
+

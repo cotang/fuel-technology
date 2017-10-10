@@ -61,13 +61,18 @@
         padding: 4px 12px 6px;
       }
       &:hover{
-        background-color: #dec9ab;
+        background-color: #ccc;
+        color: #333;
       }
     }
     &--active{
       a{
         border-top: 2px solid #25618a;
         background-color: #174265;
+        &:hover{
+          background-color: #174265;
+          color: #fff;
+        }
       }
     }
   }

@@ -11,27 +11,8 @@
   @media (max-width: $breakpoint-md){
     padding: 0 0 55px;
   }
-
-  // @media (max-width: $breakpoint-md){
-  //   background-color: #181e1f;
-  //   background-repeat: repeat;
-  //   background-position: center top;
-  //   background-image: url(../img/quality-bg.jpg);
-  //   background-size: 100%;
-  //   padding: 0;
-  // }
-
-  // .breadcrumbs{
-  //   @media (max-width: $breakpoint-md){
-  //     background-color: #181e1f;
-  //     background-repeat: no-repeat;
-  //     background-position: center center;
-  //     background-image: url(../img/quality-promo.jpg);
-  //     background-size: cover;
-  //     padding: 15px 15px 80px;
-  //   }
-  // }
 }
+
 .quality-promo-info{
   &__title{
     margin: 0;
@@ -205,6 +186,12 @@
     @media (max-width: $breakpoint-md){
       font-size: 15px;
       margin: 0;
+    }
+    a{
+      color: #353535;
+      &:hover, &:focus{
+        color: #3d6a87;
+      }
     }
   }
   &__date{

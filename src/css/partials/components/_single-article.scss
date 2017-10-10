@@ -113,6 +113,9 @@
         margin: 0.4em 0;
       }
     }
+    a{
+      color: #ffb040;
+    }
   }
   &__btn-wrapper{
     margin: 35px 0 100px;
@@ -128,7 +131,9 @@
       background-color: rgba(#141414, 0.5);
       padding-left: 15px;
       padding-right: 15px;
+      &:hover, &:focus, &:active{
+        background-color: rgb(55, 108, 140);
+      }
     }
   }
-
 }

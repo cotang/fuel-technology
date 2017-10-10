@@ -1,20 +1,27 @@
-.callback-wrapper{
-  position: relative;
-}
+// .callback-wrapper{
+//   position: relative;
+// }
 .callback{
   display: block;
   @include sprite($s-green-btn);
-  position: absolute;
-  top: 70px;
-  right: 15px;
+  // position: absolute;
+  // top: 70px;
+  // right: 15px;
+  position: fixed;
+  top: 200px;
+  right: 50px;
   @media (max-width: $breakpoint-xl){
     transform: scale(0.8);
-    top: 40px;
-    right: 10px;
+    // top: 40px;
+    // right: 10px;
+    top: 160px;
+    right: 30px;
   }
   @media (max-width: $breakpoint-md){
     transform: scale(0.66);
-    top: 8px;
-    right: 3px;
+    // top: 8px;
+    // right: 3px;
+    top: 110px;
+    right: 0;
   }
 }

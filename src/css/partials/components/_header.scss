@@ -58,22 +58,13 @@
 }
 
 .logo{
-  display: inline-block;
-  width: 170px;
-  height: 83px;
-  @media (max-width: $breakpoint-md){
-    width: auto;
-    height: auto;
-  }
-  &__img-mobile{
-    display: none;
-    @media (max-width: $breakpoint-md){
-      display: block;
-    }
-  }
+  display: block;
   &__img{
+    width: 168px;
+    height: 81px;
     @media (max-width: $breakpoint-md){
-      display: none;
+      width: 170px;
+      height: 83px;
     }
   }
 }
@@ -86,6 +77,9 @@
   &:before{
     content: '';
     @include sprite($s-header-pin);
+    background-image: url(../img/svg/geopointer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: -15px;
@@ -105,11 +99,18 @@
       content: '';
       display: none;
       @include sprite($s-header-pin-mobile);
+      background-image: url(../img/svg/round-geopointer.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+
       @media (max-width: $breakpoint-md){
         display: block;
       }
     }
-    &:hover:after{
+    &:hover, &:focus{
+      color: #3399cc;
+    }
+    &:hover:after, &:focus:after{
       @include sprite($s-header-pin-mobile-hover);
     }
     span{
@@ -151,14 +152,23 @@
       content: '';
       display: none;
       @include sprite($s-header-tel-mobile);
+      background-image: url(../img/svg/round-phone.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+
       @media (max-width: $breakpoint-md){
         display: block;
       }
     }
-    &:hover:after{
+    &:hover, &:focus{
+      color: #3399cc;
+    }
+    &:hover:after, &:focus:after{
       @include sprite($s-header-tel-mobile-hover);
     }
     span{
+      display: inline-block;
+      margin: 0 -2px;
       @media (max-width: $breakpoint-md){
         display: none;
       }
@@ -227,7 +237,11 @@
         &:before{
           content: '';
           display: inline-block;
+          margin-bottom: -2px;
           @include sprite($s-nav-house);
+          background-image: url(../img/svg/home.svg);
+          background-position: center;
+          background-repeat: no-repeat;
         }
       }
       @media (max-width: $breakpoint-md){
@@ -299,7 +313,7 @@
     > a{
       width: 100%;
       display: inline-block;
-      padding: 5px 10px;
+      padding: 5px 21px;
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
       transition: none;
@@ -348,5 +362,9 @@
     content: '';
     display: inline-block;
     @include sprite($s-nav-burger);
+    background-image: url(../img/svg/gamburger-mobile-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
   }
 }
