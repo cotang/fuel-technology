@@ -71,9 +71,35 @@ jQuery(document).ready(function($){
     $(removingBlocks).each(function(){
       $(this).prependTo($(this).closest('.promo').next());
     });
-
   }
 
+  var myMap;
+  ymaps.ready(function () {
+    if ( $(window).width() < 768 ){
+      myMap = new ymaps.Map("YMapsID", {
+        center: [58.051117, 33.483391],
+        zoom: 4
+      });
+    } else {
+      myMap = new ymaps.Map("YMapsID", {
+        center: [58.051117, 33.483391],
+        zoom: 5
+      });
+    }
+    var myPlacemark1 = new ymaps.Placemark([59.854201, 30.444552], {}, {
+    });
+    var myPlacemark2 = new ymaps.Placemark([55.673940, 37.439050], {}, {
+    });
+    myMap.geoObjects.add(myPlacemark1);
+    myMap.geoObjects.add(myPlacemark2);
+  });
+
+
+
+
+  if ( !($('.page').hasClass('page--index')) ){
+    $('.nav__item').removeClass('nav__item--active');
+  }
 
 
 

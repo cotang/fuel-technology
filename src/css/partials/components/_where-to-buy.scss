@@ -107,6 +107,7 @@
   }
   &__frame{
     position: relative;
+    height: 265px;
     @media (max-width: $breakpoint-md){
       height: 185px;
     }

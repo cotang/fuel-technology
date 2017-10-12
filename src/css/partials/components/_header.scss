@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $breakpoint-md){
+      position: relative;
+    }
   }
   &__address{
     flex: 0 0 33.3333%;
@@ -20,9 +23,12 @@
     margin: 12px 0;
     padding-left: 15px;
     @media (max-width: $breakpoint-md){
-      flex: 0 0 auto;
-      padding-left: 45px;
+      // flex: 0 0 auto;
       margin: 0;
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   &__logo{
@@ -43,8 +49,12 @@
     text-align: right;
     margin: 12px 0;
     @media (max-width: $breakpoint-md){
-      flex: 0 0 auto;
+      // flex: 0 0 auto;
       margin: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -81,7 +91,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: 2px;
     left: -15px;
     @media (max-width: $breakpoint-md){
       display: none;
@@ -112,6 +122,9 @@
     }
     &:hover:after, &:focus:after{
       @include sprite($s-header-pin-mobile-hover);
+      background-image: url(../img/svg/round-geopointer-select.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
     span{
       @media (max-width: $breakpoint-md){
@@ -165,6 +178,9 @@
     }
     &:hover:after, &:focus:after{
       @include sprite($s-header-tel-mobile-hover);
+      background-image: url(../img/svg/round-phone-select.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
     span{
       display: inline-block;
@@ -222,7 +238,8 @@
         border: none;
       }
       &:hover{
-        background-image: linear-gradient( to left, #3681b3 0%, #3c96c7 50%, #3681b3 100%);
+        // background-image: linear-gradient( to left, #3681b3 0%, #3c96c7 50%, #3681b3 100%);
+        background-color: #3681b3;
         border-left: 1px solid #295979;
         border-right: 1px solid #295979;
         @media (max-width: $breakpoint-md){
@@ -299,7 +316,7 @@
     left: 0;
     background-color: #3d6781;
     border: 1px solid #295a79;
-    width: 240px;
+    width: 260px;
     text-align: left;
     @media (max-width: $breakpoint-md){
       position: static;

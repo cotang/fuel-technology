@@ -1,0 +1,46 @@
+extends partials/templates/_template.pug
+include partials/components/_footer.pug
+
+block content
+  +b.SECTION.page--pages
+
+    // Pages
+    +b.SECTION.pages
+
+      .container
+        +e.inner
+          h1 Список доступных страниц проекта
+          ol
+            li
+              a(href="index.html") Главная страница
+            li
+              a(href="page-about.html") О компании
+            li
+              a(href="page-404.html") Страница не найдена
+            li
+              a(href="page-contacts.html") Контакты
+            li
+              a(href="page-quality.html") Контроль качества
+            li
+              a(href="page-technology.html") Технологии производства
+            li
+              a(href="page-where-to-buy.html") Где купить
+            li
+              a(href="page-news.html") Новости
+            li
+              a(href="page-news-single.html") Страница одной новости
+            li
+              a(href="page-articles.html") Статьи
+            li
+              a(href="page-articles-single.html") Страница одной статьи
+            li
+              a(href="page-services.html") Услуги
+            li
+              a(href="page-services-single.html") Страница одной услуги
+            li
+              a(href="page-production.html") Продукция
+            li
+              a(href="page-production-single.html") Страница одного продукта
+
+      // Footer
+      +footer()

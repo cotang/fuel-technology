@@ -71,7 +71,7 @@
   &__title{
     margin: 0;
     color: #cccccc;
-    font-size: 12px;
+    font-size: 14px;
     line-height: (22/13);
     padding: 10px 10px 10px 15px;
     border-bottom: 1px solid #454548;
@@ -92,6 +92,7 @@
         content: '';
         display: inline-block;
         // vertical-align: text-bottom;
+        margin-bottom: -1px;
         margin-right: 10px;
         @include sprite($s-models-burger);
       }
@@ -117,6 +118,11 @@
         color: #171717;
       }
       &:hover, &:focus{
+        color: #ff8e14;
+      }
+    }
+    &--active{
+      a{
         color: #ff8e14;
       }
     }
@@ -223,12 +229,14 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
     @media (max-width: $breakpoint-xl){
       justify-content: flex-start;
+      padding: 5px;
     }
     @media (max-width: $breakpoint-md){
       justify-content: space-around;
+      align-items: center;
     }
 
     .btn{
@@ -248,18 +256,31 @@
     }
   }
   &__price{
-    flex: 0 0 50%;
-    max-width: 50%;
-    text-align: center;
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: left;
+    padding-left: 5px;
     font-size: 14px;
     line-height: (22/14);
-    font-weight: 700;
     span:first-of-type{
       color: #717171;
+      font-weight: 400;
     }
     span:last-of-type{
       color: #262626;
+      font-weight: 700;
     }
+  }
+  &__order{
+    text-align: right;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 5px;
+  }
+  &__btn{
+    text-align: right;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -286,7 +307,7 @@
     }
   }
   &__use{
-    padding: 15px 0;
+    padding: 15px 0 0;
     @media (max-width: $breakpoint-xl){
       flex: 0 0 50%;
       max-width: 50%;

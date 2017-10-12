@@ -62,10 +62,13 @@
       left: 0;
     }
     &:hover, &:focus, &:active{
-      background-color: #316e91;
-      background-image: linear-gradient( to top, rgb(197,198,200) 0%, rgb(122,126,130) 100%);
+      // background-color: #316e91;
+      // background-image: linear-gradient( to top, rgb(197,198,200) 0%, rgb(122,126,130) 100%);
+      background-image: none;
+      background-color: #bb3021;
+      color: #fff;
+      text-shadow: none;
     }
-
   }
 }
 

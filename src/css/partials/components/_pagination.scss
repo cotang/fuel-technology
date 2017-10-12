@@ -3,7 +3,7 @@
   border: 1px solid #3f3e3e;
   font-family: $Roboto;
   font-size: 15px;
-  line-height: (30/15);
+  line-height: 1.8;
   @media (max-width: $breakpoint-xl){
     max-width: 100%;
     line-height: 1.4;
@@ -18,7 +18,7 @@
     align-items: baseline;
     overflow: hidden;
     border-radius: 1px;
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
   }
 
@@ -55,14 +55,16 @@
   &__item{
     display: inline-block;
     a{
+      border-top: 2px solid transparent;
       display: block;
       padding: 0 12px 2px;
       @media (max-width: $breakpoint-xl){
         padding: 4px 12px 6px;
       }
       &:hover{
-        background-color: #ccc;
-        color: #333;
+        border-top: 2px solid #333;
+        background-color: #333;
+        color: #fff;
       }
     }
     &--active{
