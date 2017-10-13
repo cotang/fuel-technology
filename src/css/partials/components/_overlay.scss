@@ -182,9 +182,7 @@
     }
   }
   &--certificates{
-    // width: 500px;
-    // height: 500px;
-    width: 380px;
+    width: 500px;
     @media (max-width: $breakpoint-md){
       width: 290px;
     }

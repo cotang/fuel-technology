@@ -46,6 +46,7 @@
   &__feature-item{
     flex: 0 0 25%;
     max-width: 25%;
+    padding: 0 2px;
     @media (max-width: $breakpoint-xl){
       flex: 0 0 50%;
       max-width: 50%;

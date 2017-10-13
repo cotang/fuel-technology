@@ -320,7 +320,7 @@
     }
   }
   &__make{
-    padding: 15px 0;
+    padding: 5px 0 10px;
     @media (max-width: $breakpoint-xl){
       flex: 0 0 50%;
       max-width: 50%;
@@ -338,7 +338,7 @@
     }
   }
   &__features{
-    padding: 15px 0;
+    padding: 1px 0 15px;
     @media (max-width: $breakpoint-md){
       padding: 0 15px 0;
     }
@@ -350,6 +350,9 @@
     }
     a{
       color: #ffb040;
+    }
+    img{
+      margin-bottom: 20px;
     }
   }
   &__btn-wrapper{
