@@ -24,9 +24,6 @@ jQuery(document).ready(function($){
   $('.about-gallery__img-popup, .certificate__title a, .certificate__img, .certificate__link').click( function(e){
     e.preventDefault();
     $('body').css({'overflow':'hidden'});
-    // $('.overlay').show(function(){
-    //   initSlider();
-    // });
     $('.overlay').show();
     initSlider();
   });
@@ -94,14 +91,9 @@ jQuery(document).ready(function($){
     myMap.geoObjects.add(myPlacemark2);
   });
 
-
-
-
   if ( !($('.page').hasClass('page--index')) ){
     $('.nav__item').removeClass('nav__item--active');
   }
-
-
 
 });
 
